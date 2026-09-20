@@ -309,7 +309,10 @@
 
     <section>
       <h2 class="section-title">Get in Touch</h2>
-      <form name="contact" method="POST" data-netlify="true" class="contact-form">
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+        <!-- REPLACE YOUR_ACCESS_KEY_HERE WITH YOUR ACTUAL KEY FROM STEP 1 -->
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+
         <div class="form-group">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" required />
