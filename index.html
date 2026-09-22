@@ -273,16 +273,43 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Kandel Strategies",
-  "url": "https://kandelstrategies.com",
-  "description": "Public relations and strategic communications consulting specializing in litigation PR and media strategy for attorneys and law firms.",
-  "areaServed": "United States",
-  "knowsAbout": [
-    "Litigation PR",
-    "Legal Public Relations",
-    "Crisis Communications",
-    "Media Strategy"
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://kandelstrategies.com/#organization",
+      "name": "Kandel Strategies",
+      "url": "https://kandelstrategies.com",
+      "description": "Public relations and strategic communications consulting specializing in litigation PR and media strategy for attorneys and law firms.",
+      "areaServed": "United States",
+      "knowsAbout": [
+        "Litigation PR",
+        "Legal Public Relations",
+        "Crisis Communications",
+        "Media Strategy"
+      ],
+      "founder": {
+        "@id": "https://kandelstrategies.com/#jasonkandel"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://kandelstrategies.com/#jasonkandel",
+      "name": "Jason Kandel",
+      "jobTitle": "Founder & PR Strategist",
+      "url": "https://kandelstrategies.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/jasonkandel/"
+      ],
+      "worksFor": {
+        "@id": "https://kandelstrategies.com/#organization"
+      },
+      "knowsAbout": [
+        "Journalism",
+        "Media Relations",
+        "Public Relations",
+        "Litigation PR"
+      ]
+    }
   ]
 }
 </script>
