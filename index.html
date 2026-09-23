@@ -278,12 +278,19 @@
 }
 
 @media (max-width: 600px) {
+  .profile-photo-container {
+    float: none !important;
+    margin: 0 0 1rem 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .profile-photo {
-    float: none;
-    display: block;
-    margin: 0 0 1.25rem 0;
-    width: 140px;
-    height: 140px;
+    float: none !important;
+    margin: 0 0 0.5rem 0 !important;
+    width: 150px;
+    height: 150px;
   }
 }
 </style>
@@ -408,7 +415,7 @@
 <section>
   <h2 class="section-title">About Jason Kandel</h2>
   <div class="about-content">
-    <div style="float: left; margin: 0.25rem 2rem 1.25rem 0; text-align: center;">
+    <div class="profile-photo-container" style="float: left; margin: 0.25rem 2rem 1.25rem 0; text-align: center;">
       <img src="LinkedInProfile.png" alt="Jason Kandel" class="profile-photo" style="float: none; margin: 0 0 0.5rem 0;">
       <div>
         <a href="https://www.linkedin.com/in/jasonkandel/" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; font-size: 0.9rem; font-weight: 500; display: inline-flex; align-items: center;">
@@ -419,7 +426,7 @@
         </a>
       </div>
     </div>
-    <p>Before advising attorneys on public relations, I spent years in Southern California newsrooms across print, digital, television, and radio. I've worked at the Los Angeles Times, Los Angeles Daily News, Southern California Public Radio (KPCC.org), Thomson Reuters, and NBC4 Southern California, the NBC affiliate in Los Angeles (KNBC-TV). I know what reporters need, how assignment editors evaluate pitches, and what makes a story withstand scrutiny on a tight deadline. Now, I connect journalists with attorneys offering clear insight and expert analysis on meaningful changes in the law and important legal issues of the day.</p>
+    <p>Before advising attorneys on public relations, I spent years in Southern California newsrooms across print, digital, television, and radio...</p>
   </div>
 </section>
     <section>
