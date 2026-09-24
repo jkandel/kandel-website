@@ -12,49 +12,19 @@ content:
       - name: hero_headline
         label: "Hero Headline"
         type: string
-        selector: ".hero h1"
+        selector: "div.hero h1"
 
       - name: hero_description
         label: "Hero Description"
         type: text
-        selector: ".hero p"
+        selector: "div.hero p"
 
       - name: philosophy_quote
         label: "Philosophy Quote"
         type: text
-        selector: ".philosophy-quote"
+        selector: "blockquote.philosophy-quote"
 
       - name: about_text
         label: "About Paragraph"
         type: text
-        selector: ".about-content p"
-
-      - name: faq_1_question
-        label: "FAQ 1 - Question"
-        type: string
-        selector: "#faq div:nth-of-type(1) h3"
-
-      - name: faq_1_answer
-        label: "FAQ 1 - Answer"
-        type: text
-        selector: "#faq div:nth-of-type(1) p"
-
-      - name: faq_2_question
-        label: "FAQ 2 - Question"
-        type: string
-        selector: "#faq div:nth-of-type(2) h3"
-
-      - name: faq_2_answer
-        label: "FAQ 2 - Answer"
-        type: text
-        selector: "#faq div:nth-of-type(2) p"
-
-      - name: faq_3_question
-        label: "FAQ 3 - Question"
-        type: string
-        selector: "#faq div:nth-of-type(3) h3"
-
-      - name: faq_3_answer
-        label: "FAQ 3 - Answer"
-        type: text
-        selector: "#faq div:nth-of-type(3) p"
+        selector: "div.about-content p"
