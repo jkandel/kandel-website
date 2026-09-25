@@ -484,5 +484,35 @@
     <p>&copy; 2026 Kandel Strategies. All rights reserved.</p>
   </footer>
 
+  <script>
+    fetch('content/site.json')
+      .then(r => r.json())
+      .then(data => {
+        if (data.hero_title) document.getElementById('hero-title').textContent = data.hero_title;
+        if (data.hero_body) document.getElementById('hero-body').textContent = data.hero_body;
+        if (data.philosophy_quote) document.getElementById('philosophy-quote').textContent = data.philosophy_quote;
+
+        if (data.services && data.services.length) {
+          const grid = document.getElementById('services-grid');
+          grid.innerHTML = data.services.map(s => `
+            <div class="service-card">
+              <h3>${s.title}</h3>
+              <p class="service-desc">${s.description}</p>
+            </div>`).join('');
+        }
+
+        if (data.about_text) document.getElementById('about-text').textContent = data.about_text;
+
+        if (data.faqs && data.faqs.length) {
+          const faqList = document.getElementById('faq-list');
+          faqList.innerHTML = data.faqs.map(f => `
+            <div style="margin-bottom: 1.5rem;">
+              <h3>${f.question}</h3>
+              <p>${f.answer}</p>
+            </div>`).join('');
+        }
+      })
+      .catch(err => console.error('Content load failed:', err));
+  </script>
 </body>
 </html>
