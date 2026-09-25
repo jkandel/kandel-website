@@ -19,28 +19,26 @@ content:
         type: text
       - label: Services
         name: services
-        type: list
-        field:
-          type: object
-          fields:
-            - label: Service Title
-              name: title
-              type: string
-            - label: Service Description
-              name: description
-              type: text
+        type: object
+        list: true
+        fields:
+          - label: Service Title
+            name: title
+            type: string
+          - label: Service Description
+            name: description
+            type: text
       - label: About Text
         name: about_text
         type: text
       - label: FAQs
         name: faqs
-        type: list
-        field:
-          type: object
-          fields:
-            - label: Question
-              name: question
-              type: string
-            - label: Answer
-              name: answer
-              type: text
+        type: object
+        list: true
+        fields:
+          - label: Question
+            name: question
+            type: string
+          - label: Answer
+            name: answer
+            type: text
