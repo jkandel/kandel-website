@@ -20,23 +20,27 @@ content:
       - label: Services
         name: services
         type: list
-        fields:
-          - label: Service Title
-            name: title
-            type: string
-          - label: Service Description
-            name: description
-            type: text
+        field:
+          type: object
+          fields:
+            - label: Service Title
+              name: title
+              type: string
+            - label: Service Description
+              name: description
+              type: text
       - label: About Text
         name: about_text
         type: text
       - label: FAQs
         name: faqs
         type: list
-        fields:
-          - label: Question
-            name: question
-            type: string
-          - label: Answer
-            name: answer
-            type: text
+        field:
+          type: object
+          fields:
+            - label: Question
+              name: question
+              type: string
+            - label: Answer
+              name: answer
+              type: text
