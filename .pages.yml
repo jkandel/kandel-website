@@ -3,7 +3,8 @@ media:
   output: /images
 
 content:
-  - label: Site Content
+  - name: homepage
+    label: Homepage Content
     type: file
     path: content/site.json
     fields:
