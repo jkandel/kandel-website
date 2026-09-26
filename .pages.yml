@@ -11,6 +11,9 @@ content:
       - label: Logo Image URL
         name: logo_url
         type: string
+      - label: Headshot Image URL
+        name: headshot_url
+        type: string
       - label: Hero Title
         name: hero_title
         type: string
