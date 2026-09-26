@@ -422,7 +422,7 @@
       <h2 class="section-title">About Jason Kandel</h2>
       <div class="about-content">
         <div class="profile-photo-container" style="float: left; margin: 0.25rem 2rem 1.25rem 0; text-align: center;">
-          <img src="LinkedInProfile.png" alt="Jason Kandel" class="profile-photo" style="float: none; margin: 0 0 0.5rem 0;">
+          <img id="headshot-img" src="LinkedInProfile.png" alt="Jason Kandel" class="profile-photo" style="float: none; margin: 0 0 0.5rem 0;">
           <div>
             <a href="https://www.linkedin.com/in/jasonkandel/" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; font-size: 0.9rem; font-weight: 500; display: inline-flex; align-items: center;">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 5px;">
@@ -489,6 +489,7 @@
       .then(r => r.json())
       .then(data => {
         if (data.logo_url) document.getElementById('site-logo').src = data.logo_url;
+        if (data.headshot_url) document.getElementById('headshot-img').src = data.headshot_url;
         if (data.hero_title) document.getElementById('hero-title').textContent = data.hero_title;
         if (data.hero_body) document.getElementById('hero-body').textContent = data.hero_body;
         if (data.philosophy_quote) document.getElementById('philosophy-quote').textContent = data.philosophy_quote;
