@@ -8,6 +8,9 @@ content:
     type: file
     path: content/site.json
     fields:
+      - label: Logo Image URL
+        name: logo_url
+        type: string
       - label: Hero Title
         name: hero_title
         type: string
