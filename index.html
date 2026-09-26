@@ -375,7 +375,7 @@
 <body>
 
   <header>
-    <img src="https://lh3.googleusercontent.com/d/1a-4yO3eekafzu7nwsVD0T1GIle8Myu41" alt="Kandel Strategies Logo" class="brand-logo">
+    <img id="site-logo" src="https://lh3.googleusercontent.com/d/1a-4yO3eekafzu7nwsVD0T1GIle8Myu41" alt="Kandel Strategies Logo" class="brand-logo">
     <div class="brand-text-group">
       <span class="brand-title">Kandel Strategies</span>
       <span class="brand-tagline">
@@ -488,6 +488,7 @@
     fetch('content/site.json')
       .then(r => r.json())
       .then(data => {
+        if (data.logo_url) document.getElementById('site-logo').src = data.logo_url;
         if (data.hero_title) document.getElementById('hero-title').textContent = data.hero_title;
         if (data.hero_body) document.getElementById('hero-body').textContent = data.hero_body;
         if (data.philosophy_quote) document.getElementById('philosophy-quote').textContent = data.philosophy_quote;
