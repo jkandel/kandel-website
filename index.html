@@ -394,7 +394,7 @@
     </div>
 
     <section>
-      <div class="section-label">My Philosophy</div>
+      <div class="section-label" id="philosophy-header">My Philosophy</div>
       <blockquote class="philosophy-quote philosophy-text" id="philosophy-quote">
         "I work with clients who have real accomplishments and value clear, accurate communication. I don't do spin, high-volume noise, or predetermined messaging. Tools can speed up the process, but credible communication still depends on critical thinking, lived experience, and testing assumptions before speaking. If you value that standard, let's talk."
       </blockquote>
@@ -492,6 +492,7 @@
         if (data.headshot_url) document.getElementById('headshot-img').src = data.headshot_url;
         if (data.hero_title) document.getElementById('hero-title').textContent = data.hero_title;
         if (data.hero_body) document.getElementById('hero-body').textContent = data.hero_body;
+        if (data.philosophy_header) document.getElementById('philosophy-header').textContent = data.philosophy_header;
         if (data.philosophy_quote) document.getElementById('philosophy-quote').textContent = data.philosophy_quote;
 
         if (data.services && data.services.length) {
