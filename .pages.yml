@@ -40,6 +40,9 @@ content:
           - label: Service Description
             name: description
             type: text
+      - label: About Header
+        name: about_header
+        type: string
       - label: About Text
         name: about_text
         type: text
