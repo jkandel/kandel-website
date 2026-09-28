@@ -401,7 +401,7 @@
     </section>
 
     <section>
-      <h2 class="section-title">What I Do</h2>
+      <h2 class="section-title" id="services-header">What I Do</h2>
       <div class="services-grid" id="services-grid">
         <div class="service-card">
           <h3>Communications</h3>
@@ -494,6 +494,7 @@
         if (data.hero_body) document.getElementById('hero-body').textContent = data.hero_body;
         if (data.philosophy_header) document.getElementById('philosophy-header').textContent = data.philosophy_header;
         if (data.philosophy_quote) document.getElementById('philosophy-quote').textContent = data.philosophy_quote;
+        if (data.services_header) document.getElementById('services-header').textContent = data.services_header;
 
         if (data.services && data.services.length) {
           const grid = document.getElementById('services-grid');
