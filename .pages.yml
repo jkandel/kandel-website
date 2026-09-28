@@ -20,6 +20,10 @@ content:
       - label: Hero Body
         name: hero_body
         type: text
+      - label: Philosophy Header
+        name: philosophy_header
+        type: text
+        default: MY PHILOSOPHY
       - label: Philosophy Quote
         name: philosophy_quote
         type: text
