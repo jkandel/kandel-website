@@ -26,6 +26,9 @@ content:
       - label: Philosophy Quote
         name: philosophy_quote
         type: text
+      - label: Services Header
+        name: services_header
+        type: string
       - label: Services
         name: services
         type: object
