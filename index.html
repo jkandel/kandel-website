@@ -305,80 +305,6 @@
       }
     }
   </style>
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "ProfessionalService",
-        "@id": "https://kandelstrategies.com/#organization",
-        "name": "Kandel Strategies",
-        "url": "https://kandelstrategies.com",
-        "description": "Public relations and strategic communications consulting specializing in litigation PR and media strategy for attorneys and law firms.",
-        "areaServed": "United States",
-        "knowsAbout": [
-          "Litigation PR",
-          "Legal Public Relations",
-          "Crisis Communications",
-          "Media Strategy"
-        ],
-        "founder": {
-          "@id": "https://kandelstrategies.com/#jasonkandel"
-        },
-        "author": {
-          "@id": "https://kandelstrategies.com/#jasonkandel"
-        }
-      },
-      {
-        "@type": "Person",
-        "@id": "https://kandelstrategies.com/#jasonkandel",
-        "name": "Jason Kandel",
-        "jobTitle": "Founder & PR Strategist",
-        "url": "https://kandelstrategies.com",
-        "sameAs": [
-          "https://kandelstrategies.com"
-        ],
-        "worksFor": {
-          "@id": "https://kandelstrategies.com/#organization"
-        },
-        "knowsAbout": [
-          "Journalism",
-          "Media Relations",
-          "Public Relations",
-          "Litigation PR"
-        ]
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What services does Kandel Strategies provide?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Kandel Strategies specializes in public relations, crisis communications, and media strategy tailored specifically for attorneys, law firms, and legal organizations."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How does Kandel Strategies assist with litigation PR?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "I manage high-stakes media interest, draft strategic press materials, and protect client reputations during complex legal disputes and courtroom proceedings."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Where is Kandel Strategies located and who do you serve?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Based in Southern California, Kandel Strategies serves law firms, corporate legal departments, and individual attorneys across California and nationwide."
-            }
-          }
-        ]
-      }
-    ]
-  }
-  </script>
 </head>
 <body>
 
@@ -524,6 +450,25 @@
               <h3>${f.question}</h3>
               <p>${f.answer}</p>
             </div>`).join('');
+
+          // Automatically generate FAQ Schema from site.json
+          const faqSchema = {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": data.faqs.map(f => ({
+              "@type": "Question",
+              "name": f.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": f.answer
+              }
+            }))
+          };
+
+          const script = document.createElement('script');
+          script.type = 'application/ld+json';
+          script.text = JSON.stringify(faqSchema);
+          document.head.appendChild(script);
         }
       })
       .catch(err => console.error('Content load failed:', err));
