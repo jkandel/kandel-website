@@ -443,6 +443,8 @@
 
         if (data.about_text) document.getElementById('about-text').textContent = data.about_text;
 
+        // Render visible FAQs and build full dynamic Schema
+        const faqEntities = [];
         if (data.faqs && data.faqs.length) {
           const faqList = document.getElementById('faq-list');
           faqList.innerHTML = data.faqs.map(f => `
@@ -451,25 +453,66 @@
               <p>${f.answer}</p>
             </div>`).join('');
 
-          // Automatically generate FAQ Schema from site.json
-          const faqSchema = {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": data.faqs.map(f => ({
+          data.faqs.forEach(f => {
+            faqEntities.push({
               "@type": "Question",
               "name": f.question,
               "acceptedAnswer": {
                 "@type": "Answer",
                 "text": f.answer
               }
-            }))
-          };
-
-          const script = document.createElement('script');
-          script.type = 'application/ld+json';
-          script.text = JSON.stringify(faqSchema);
-          document.head.appendChild(script);
+            });
+          });
         }
+
+        // Full Schema Graph injected dynamically
+        const schemaGraph = {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "ProfessionalService",
+              "@id": "https://kandelstrategies.com/#organization",
+              "name": "Kandel Strategies",
+              "url": "https://kandelstrategies.com",
+              "description": "Public relations and strategic communications consulting specializing in litigation PR and media strategy for attorneys and law firms.",
+              "areaServed": "United States",
+              "knowsAbout": [
+                "Litigation PR",
+                "Legal Public Relations",
+                "Crisis Communications",
+                "Media Strategy"
+              ],
+              "founder": {
+                "@id": "https://kandelstrategies.com/#jasonkandel"
+              }
+            },
+            {
+              "@type": "Person",
+              "@id": "https://kandelstrategies.com/#jasonkandel",
+              "name": "Jason Kandel",
+              "jobTitle": "Founder & PR Strategist",
+              "url": "https://kandelstrategies.com",
+              "sameAs": [
+                "https://www.linkedin.com/in/jasonkandel/"
+              ],
+              "worksFor": {
+                "@id": "https://kandelstrategies.com/#organization"
+              }
+            }
+          ]
+        };
+
+        if (faqEntities.length > 0) {
+          schemaGraph["@graph"].push({
+            "@type": "FAQPage",
+            "mainEntity": faqEntities
+          });
+        }
+
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.text = JSON.stringify(schemaGraph);
+        document.head.appendChild(script);
       })
       .catch(err => console.error('Content load failed:', err));
   </script>
