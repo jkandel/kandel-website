@@ -14,8 +14,8 @@ content:
       - label: Headshot Image URL
         name: headshot_url
         type: string
-      - label: Headshot Image URL
-        name: headshot_url
+      - label: Lead Image URL
+        name: lead_image_url
         type: string
       - label: Hero Title
         name: hero_title
