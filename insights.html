@@ -1,21 +1,227 @@
 ---
 layout: default
-title: Insights
+title: Insights | Kandel Strategies
 ---
 
-<section style="max-width: 800px; margin: 0 auto; padding: 40px 20px;">
-  <h1>Insights</h1>
-  <hr style="margin-bottom: 30px;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insights | Kandel Strategies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0F172A;
+      --card-bg: #1E293B;
+      --border: #334155;
+      --text-main: #F8FAFC;
+      --text-muted: #94A3B8;
+      --accent: #38BDF8;
+      --accent-hover: #7DD3FC;
+    }
 
-  <ul style="list-style: none; padding: 0;">
-    {% for post in site.posts %}
-      <li style="margin-bottom: 25px;">
-        <h2 style="margin: 0 0 5px 0;">
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </h2>
-        <small style="color: #666;">{{ post.date | date: "%B %d, %Y" }}</small>
-        <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-      </li>
-    {% endfor %}
-  </ul>
-</section>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-main);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 1.5rem 1.5rem 1.25rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .brand-logo {
+      height: 80px;
+      width: auto;
+      object-fit: contain;
+      display: block;
+      border-radius: 14px;
+    }
+
+    .brand-text-group {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .brand-title {
+      font-family: 'Newsreader', serif;
+      font-size: 2.2rem;
+      font-weight: 600;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: var(--text-main);
+      text-decoration: none;
+    }
+
+    .brand-tagline {
+      font-size: 0.95rem;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      color: var(--accent);
+      margin-top: 0.25rem;
+    }
+
+    .container {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 6rem;
+    }
+
+    .page-header {
+      margin-bottom: 3rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 2rem;
+    }
+
+    .page-title {
+      font-family: 'Newsreader', serif;
+      font-size: clamp(2.25rem, 4.5vw, 3.25rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.75rem;
+    }
+
+    .page-desc {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 720px;
+    }
+
+    .posts-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+    }
+
+    .post-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 2rem;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+      text-decoration: none;
+      display: block;
+    }
+
+    .post-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    .post-title {
+      font-family: 'Newsreader', serif;
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 0.5rem;
+      line-height: 1.3;
+    }
+
+    .post-card:hover .post-title {
+      color: var(--accent);
+    }
+
+    .post-date {
+      font-size: 0.85rem;
+      color: var(--accent);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+
+    .post-excerpt {
+      font-size: 1rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      border: none;
+      background-color: var(--accent);
+      color: #0F172A;
+    }
+
+    .btn:hover {
+      background-color: var(--accent-hover);
+    }
+
+    footer {
+      padding: 4rem 1.5rem 3rem;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="/" style="display: flex; align-items: center; gap: 1rem; text-decoration: none;">
+      <img id="site-logo" src="https://lh3.googleusercontent.com/d/1a-4yO3eekafzu7nwsVD0T1GIle8Myu41" alt="Kandel Strategies Logo" class="brand-logo">
+      <div class="brand-text-group">
+        <span class="brand-title">Kandel Strategies</span>
+        <span class="brand-tagline">
+          Communications &nbsp;|&nbsp; Media Relations &nbsp;|&nbsp; AI Visibility
+        </span>
+      </div>
+    </a>
+    <nav style="display: flex; gap: 1.5rem; align-items: center;">
+      <a href="/" style="color: var(--text-main); text-decoration: none; font-weight: 600;">Home</a>
+      <a href="/#contact" class="btn">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="page-header">
+      <h1 class="page-title">Insights</h1>
+      <p class="page-desc">Perspectives, commentary, and analysis on litigation public relations, media strategy, and brand visibility.</p>
+    </div>
+
+    <div class="posts-grid">
+      {% for post in site.posts %}
+        <a href="{{ post.url }}" class="post-card">
+          <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
+          <h2 class="post-title">{{ post.title }}</h2>
+          <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 35 }}</p>
+        </a>
+      {% endfor %}
+    </div>
+  </main>
+
+  <footer>
+    <p>Kandel Strategies is a litigation PR and strategic communications consultancy founded by Jason Kandel.</p>
+    <p style="margin-top: 0.5rem;">&copy; 2026 Kandel Strategies. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
