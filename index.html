@@ -117,10 +117,24 @@
       max-width: 850px;
     }
 
+    .hero-content {
+      overflow: hidden;
+    }
+
+    .hero-lead-img {
+      float: right;
+      width: 320px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin: 0.25rem 0 1.5rem 2rem;
+      border: 1px solid var(--border);
+      display: none; /* Shown dynamically if image URL exists */
+    }
+
     .hero p {
       font-size: 1.2rem;
       color: var(--text-muted);
-      max-width: 720px;
       line-height: 1.7;
       margin-bottom: 2rem;
     }
@@ -129,6 +143,7 @@
       display: flex;
       gap: 1rem;
       flex-wrap: wrap;
+      clear: both;
     }
 
     .btn {
@@ -288,6 +303,15 @@
       border: 1px solid var(--border);
     }
 
+    @media (max-width: 768px) {
+      .hero-lead-img {
+        float: none;
+        display: block;
+        width: 100%;
+        margin: 0 0 1.5rem 0;
+      }
+    }
+
     @media (max-width: 600px) {
       .profile-photo-container {
         float: none !important;
@@ -327,7 +351,10 @@
   <main class="container">
     <div class="hero">
       <h1 class="hero-title" id="hero-title">Public Relations & Media Strategy</h1>
-      <p class="hero-body" id="hero-body">I identify news opportunities to get attorneys quoted in mainstream media and trade publications, prepare them for media interviews, manage media attention around high-stakes litigation, and position their firms for long-term credibility. If you're a law firm partner, managing partner, or legal executive looking to sharpen your media strategy, whether preparing for reporter interviews or positioning your firm to stand out across AI and search platforms, contact me.</p>
+      <div class="hero-content">
+        <img id="hero-lead-img" src="" alt="Kandel Strategies Lead Image" class="hero-lead-img">
+        <p class="hero-body" id="hero-body">I identify news opportunities to get attorneys quoted in mainstream media and trade publications, prepare them for media interviews, manage media attention around high-stakes litigation, and position their firms for long-term credibility. If you're a law firm partner, managing partner, or legal executive looking to sharpen your media strategy, whether preparing for reporter interviews or positioning your firm to stand out across AI and search platforms, contact me.</p>
+      </div>
       <div class="cta-group">
         <a href="#contact" class="btn btn-primary">Get in Touch</a>
       </div>
@@ -431,6 +458,11 @@
       .then(data => {
         if (data.logo_url) document.getElementById('site-logo').src = data.logo_url;
         if (data.headshot_url) document.getElementById('headshot-img').src = data.headshot_url;
+        if (data.lead_image_url) {
+          const leadImg = document.getElementById('hero-lead-img');
+          leadImg.src = data.lead_image_url;
+          leadImg.style.display = 'block';
+        }
         if (data.hero_title) document.getElementById('hero-title').textContent = data.hero_title;
         if (data.hero_body) document.getElementById('hero-body').textContent = data.hero_body;
         if (data.philosophy_header) document.getElementById('philosophy-header').textContent = data.philosophy_header;
