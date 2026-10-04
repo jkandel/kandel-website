@@ -304,10 +304,15 @@
     }
 
     @media (max-width: 768px) {
+      .hero-content {
+        flex-direction: column !important;
+        text-align: center;
+      }
       .hero-lead-img {
         float: none;
         display: block;
-        width: 100%;
+        width: 100% !important;
+        max-width: 320px !important;
         margin: 0 0 1.5rem 0;
       }
     }
