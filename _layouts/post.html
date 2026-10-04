@@ -155,15 +155,5 @@ layout: null
     <p style="margin-top: 0.5rem;">&copy; 2026 Kandel Strategies. All rights reserved.</p>
   </footer>
 
-  <script>
-    fetch('/content/site.json')
-      .then(r => r.json())
-      .then(data => {
-        if (data.logo_url) {
-          document.getElementById('site-logo').src = data.logo_url;
-        }
-      })
-      .catch(err => console.error('Content load failed:', err));
-  </script>
 </body>
 </html>
