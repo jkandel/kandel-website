@@ -338,10 +338,10 @@
 
   <header>
     <div style="display: flex; align-items: center; gap: 1rem;">
-<img id="site-logo" src="/kandelstrategieslogo.svg" alt="Kandel Strategies Logo" class="brand-logo">
+      <img id="site-logo" src="/kandelstrategieslogo.svg" alt="Kandel Strategies Logo" class="brand-logo">
       <div class="brand-text-group">
         <span class="brand-title">Kandel Strategies</span>
-<span class="brand-tagline">Communications &nbsp;|&nbsp; Media Relations &nbsp;|&nbsp; AI Visibility</span>
+        <span class="brand-tagline">Communications &nbsp;|&nbsp; Media Relations &nbsp;|&nbsp; AI Visibility</span>
       </div>
     </div>
     <nav style="display: flex; gap: 1.5rem; align-items: center;">
@@ -350,50 +350,40 @@
     </nav>
   </header>
 
+  <!--
+    DEVELOPER NOTE / FUTURE SELF:
+    All dynamic text containers below are left intentionally empty in the HTML source.
+    Data is fetched asynchronously from `content/site.json` and injected via JavaScript.
+    If a field or array item is deleted in the CMS, the script explicitly clears or hides 
+    the corresponding DOM element so deleted content never lingers as visual fallback text.
+  -->
   <main class="container">
-<div class="hero" style="padding: 2.5rem 0 3.5rem;">
-      <h1 class="hero-title" id="hero-title" style="font-size: clamp(1.8rem, 4vw, 3rem); margin-bottom: 1.5rem;">Public Relations & Media Strategy</h1>
+    <div class="hero" style="padding: 2.5rem 0 3.5rem;">
+      <h1 class="hero-title" id="hero-title" style="font-size: clamp(1.8rem, 4vw, 3rem); margin-bottom: 1.5rem;"></h1>
       <div class="hero-content">
-        <img id="hero-lead-img" src="" alt="Kandel Strategies Lead Image" class="hero-lead-img" style="width: 100%; max-width: 850px; height: auto; display: block; margin: 0 0 1.5rem 0; border-radius: 12px; border: 1px solid var(--border);">
-        <p class="hero-body" id="hero-body" style="font-size: 1.15rem; color: var(--text-muted); line-height: 1.7; max-width: 850px; margin-bottom: 1.75rem;">
-          Kandel Strategies connects legal journalists with law firm partners and executives for expert media commentary. Founded by former journalist Jason Kandel, the firm provides strategic media relations and AI visibility for law firms and executives.
-        </p>
+        <img id="hero-lead-img" src="" alt="Kandel Strategies Lead Image" class="hero-lead-img" style="width: 100%; max-width: 850px; height: auto; border-radius: 12px; border: 1px solid var(--border);">
+        <p class="hero-body" id="hero-body" style="font-size: 1.15rem; color: var(--text-muted); line-height: 1.7; max-width: 850px; margin-bottom: 1.75rem;"></p>
       </div>
       <div class="cta-group">
         <a href="#contact" class="btn btn-primary">Get in Touch</a>
       </div>
     </div>
 
-    <section>
-      <div class="section-label" id="philosophy-header">My Philosophy</div>
-      <blockquote class="philosophy-quote philosophy-text" id="philosophy-quote">
-        "I work with clients who have real accomplishments and value clear, accurate communication. I don't do spin, high-volume noise, or predetermined messaging. Tools can speed up the process, but credible communication still depends on critical thinking, lived experience, and testing assumptions before speaking. If you value that standard, let's talk."
-      </blockquote>
+    <section id="section-philosophy">
+      <div class="section-label" id="philosophy-header"></div>
+      <blockquote class="philosophy-quote philosophy-text" id="philosophy-quote"></blockquote>
     </section>
 
-    <section>
-      <h2 class="section-title" id="services-header">What I Do</h2>
-      <div class="services-grid" id="services-grid">
-        <div class="service-card">
-          <h3>Communications</h3>
-          <p class="service-desc">Clear, focused messaging that turns complex matters into plain English and creates opportunities for attorneys and executives to share their expertise.</p>
-        </div>
-        <div class="service-card">
-          <h3>Media Relations</h3>
-          <p class="service-desc">Direct outreach to reporters and newsrooms to secure earned coverage in mainstream media and legal trades.</p>
-        </div>
-        <div class="service-card">
-          <h3>AI Visibility</h3>
-          <p class="service-desc">Structuring your public record, published work, and media coverage so tools such as ChatGPT, Perplexity, and Google cite your expertise accurately.</p>
-        </div>
-      </div>
+    <section id="section-services">
+      <h2 class="section-title" id="services-header"></h2>
+      <div class="services-grid" id="services-grid"></div>
     </section>
 
-    <section>
-      <h2 class="section-title" id="about-header">About Jason Kandel</h2>
+    <section id="section-about">
+      <h2 class="section-title" id="about-header"></h2>
       <div class="about-content">
         <div class="profile-photo-container" style="float: left; margin: 0.25rem 2rem 1.25rem 0; text-align: center;">
-          <img id="headshot-img" src="LinkedInProfile.png" alt="Jason Kandel" class="profile-photo" style="float: none; margin: 0 0 0.5rem 0;">
+          <img id="headshot-img" src="" alt="Jason Kandel" class="profile-photo" style="float: none; margin: 0 0 0.5rem 0; display: none;">
           <div>
             <a href="https://www.linkedin.com/in/jasonkandel/" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; font-size: 0.9rem; font-weight: 500; display: inline-flex; align-items: center;">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 5px;">
@@ -403,7 +393,7 @@
             </a>
           </div>
         </div>
-        <p class="about-p" id="about-text">Before advising attorneys on public relations, I spent years in Southern California newsrooms across print, digital, television, and radio. I've worked at the Los Angeles Times, Los Angeles Daily News, Southern California Public Radio (KPCC.org), Thomson Reuters, and NBC4 Southern California, the NBC affiliate in Los Angeles (KNBC-TV). I know what reporters need and how assignment editors evaluate pitches on tight deadlines. Now, I connect journalists with attorneys offering clear insight and expert analysis on meaningful changes in the law and important legal issues of the day.</p>
+        <p class="about-p" id="about-text"></p>
       </div>
     </section>
 
@@ -432,22 +422,7 @@
 
     <section id="faq" style="padding: 2rem 0;">
       <h2>Frequently Asked Questions</h2>
-      <div id="faq-list">
-        <div style="margin-bottom: 1.5rem;">
-          <h3 class="faq-q1">What services does Kandel Strategies provide?</h3>
-          <p class="faq-a1">Kandel Strategies specializes in public relations, crisis communications, and media strategy tailored specifically for attorneys, law firms, and legal organizations.</p>
-        </div>
-
-        <div style="margin-bottom: 1.5rem;">
-          <h3 class="faq-q2">How does Kandel Strategies assist with legal PR?</h3>
-          <p class="faq-a2">I manage high-stakes media interest, draft strategic press materials, and protect client reputations during complex legal disputes and courtroom proceedings.</p>
-        </div>
-
-        <div style="margin-bottom: 1.5rem;">
-          <h3 class="faq-q3">Where is Kandel Strategies located and who do you serve?</h3>
-          <p class="faq-a3">Based in Southern California, Kandel Strategies serves law firms, corporate legal departments, and individual attorneys across California and nationwide.</p>
-        </div>
-      </div>
+      <div id="faq-list"></div>
     </section>
   </main>
 
@@ -457,38 +432,83 @@
   </footer>
 
   <script>
+    /*
+      DEVELOPER NOTE / FUTURE SELF:
+      This script handles strict dynamic rendering.
+      For key single elements, explicit existence checks (`if/else`) are used to either populate text 
+      or hide/clear the node so content deleted from `site.json` does not remain visible on the DOM.
+    */
     fetch('content/site.json')
       .then(r => r.json())
       .then(data => {
+        // Logo
         if (data.logo_url) document.getElementById('site-logo').src = data.logo_url;
-        if (data.headshot_url) document.getElementById('headshot-img').src = data.headshot_url;
+        
+        // Headshot
+        const headshot = document.getElementById('headshot-img');
+        if (data.headshot_url) {
+          headshot.src = data.headshot_url;
+          headshot.style.display = 'block';
+        } else {
+          headshot.style.display = 'none';
+        }
+
+        // Hero Lead Image
+        const leadImg = document.getElementById('hero-lead-img');
         if (data.lead_image_url) {
-          const leadImg = document.getElementById('hero-lead-img');
           leadImg.src = data.lead_image_url;
           leadImg.style.display = 'block';
+        } else {
+          leadImg.style.display = 'none';
         }
-        if (data.hero_title) document.getElementById('hero-title').textContent = data.hero_title;
-        if (data.hero_body) document.getElementById('hero-body').textContent = data.hero_body;
-        if (data.philosophy_header) document.getElementById('philosophy-header').textContent = data.philosophy_header;
-        if (data.philosophy_quote) document.getElementById('philosophy-quote').textContent = data.philosophy_quote;
-        if (data.services_header) document.getElementById('services-header').textContent = data.services_header;
-        if (data.about_header) document.getElementById('about-header').textContent = data.about_header;
 
+        // Hero Title & Body
+        const heroTitle = document.getElementById('hero-title');
+        if (data.hero_title) heroTitle.textContent = data.hero_title;
+        else heroTitle.style.display = 'none';
+
+        const heroBody = document.getElementById('hero-body');
+        if (data.hero_body) heroBody.textContent = data.hero_body;
+        else heroBody.style.display = 'none';
+
+        // Philosophy Section
+        const philHeader = document.getElementById('philosophy-header');
+        if (data.philosophy_header) philHeader.textContent = data.philosophy_header;
+        else philHeader.style.display = 'none';
+
+        const philQuote = document.getElementById('philosophy-quote');
+        if (data.philosophy_quote) philQuote.textContent = data.philosophy_quote;
+        else philQuote.style.display = 'none';
+
+        // Services Section
+        const servHeader = document.getElementById('services-header');
+        if (data.services_header) servHeader.textContent = data.services_header;
+        else servHeader.style.display = 'none';
+
+        const grid = document.getElementById('services-grid');
         if (data.services && data.services.length) {
-          const grid = document.getElementById('services-grid');
           grid.innerHTML = data.services.map(s => `
             <div class="service-card">
               <h3>${s.title}</h3>
               <p class="service-desc">${s.description}</p>
             </div>`).join('');
+        } else {
+          grid.innerHTML = '';
         }
 
-        if (data.about_text) document.getElementById('about-text').textContent = data.about_text;
+        // About Section
+        const abtHeader = document.getElementById('about-header');
+        if (data.about_header) abtHeader.textContent = data.about_header;
+        else abtHeader.style.display = 'none';
 
-        // Render visible FAQs and build full dynamic Schema
+        const abtText = document.getElementById('about-text');
+        if (data.about_text) abtText.textContent = data.about_text;
+        else abtText.style.display = 'none';
+
+        // FAQs Rendering & Dynamic Schema Generation
+        const faqList = document.getElementById('faq-list');
         const faqEntities = [];
         if (data.faqs && data.faqs.length) {
-          const faqList = document.getElementById('faq-list');
           faqList.innerHTML = data.faqs.map(f => `
             <div style="margin-bottom: 1.5rem;">
               <h3>${f.question}</h3>
@@ -505,6 +525,8 @@
               }
             });
           });
+        } else {
+          faqList.innerHTML = '';
         }
 
         // Full Schema Graph injected dynamically
