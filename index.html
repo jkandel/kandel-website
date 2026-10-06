@@ -56,7 +56,8 @@
 
     /* --- Cinematic Hero Styles --- */
     .hero-section {
-      background-image: url('/Pacific_cinematic_coastline.jpg');
+      background-color: #0F172A; /* Dark fallback color while large image loads */
+      background-image: url('/Pacific_Coast.JPG'); /* Set default to the correct new image */
       background-size: cover;
       background-position: center 30%;
       background-repeat: no-repeat;
@@ -473,7 +474,7 @@
     fetch('content/site.json')
       .then(r => r.json())
       .then(data => {
-        // Updated to populate logo dynamically
+        // Logo updated to dynamic logic matching your CMS
         if (data.logo_url) {
           document.getElementById('site-logo').src = '/' + data.logo_url.split('/').pop();
         }
