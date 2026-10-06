@@ -145,7 +145,7 @@ layout: null
       <span class="post-date">{{ page.date | date: "%B %d, %Y" }}</span>
       
       {% if page.image %}
-        <img src="/{{ page.image }}" alt="{{ page.title }}" style="width: 100%; height: auto; border-radius: 12px; margin-top: 2rem;">
+        <img src="/images/{{ page.image | split: '/' | last }}" alt="{{ page.title }}" style="width: 100%; height: auto; border-radius: 12px; margin-top: 2rem;">
       {% endif %}
     </div>
 
