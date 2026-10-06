@@ -76,6 +76,9 @@ content:
         label: Published
         type: boolean
         default: false
+      - name: image
+        label: Featured Image
+        type: image        
       - name: body
         label: Main Text
         type: rich-text
