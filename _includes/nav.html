@@ -1,12 +1,12 @@
-<header class="hero-nav">
+<header class="hero-nav" {% if page.url == '/' %}style="background-color: rgba(0, 0, 0, 0.5);"{% endif %}>
   <div class="nav-brand">
     <img id="site-logo" src="/public/images/kandelstrategieslogo.svg" alt="Kandel Strategies Logo" class="hero-logo">
     <span class="company-name">Kandel Strategies</span>
   </div>
   <nav class="nav-links">
     <a href="/">Home</a>
-    <a href="/#section-about">About</a>
     <a href="/#section-services">Services</a>
+    <a href="/#section-about">About</a>
     <a href="/insights">Insights</a>
     <a href="/#contact">Contact</a>
   </nav>
