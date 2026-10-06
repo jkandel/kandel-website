@@ -1,7 +1,7 @@
 ---
 title: Building With AI, One Stepping Stone at a Time
 date: 2026-10-05
-published: false
+published: true
 image: /images/Forest path to beach.jpg
 ---
 I recently created my website for my new legal PR consultancy with the help of Google Gemini. I used mostly free tools, vibe coded the homepage and developed a custom CMS for publishing.
