@@ -4,160 +4,54 @@ layout: null
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} | Kandel Strategies</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #0F172A;
-      --card-bg: #1E293B;
-      --border: #334155;
-      --text-main: #F8FAFC;
-      --text-muted: #94A3B8;
-      --accent: #38BDF8;
-      --accent-hover: #7DD3FC;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      background-color: var(--bg);
-      color: var(--text-main);
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    header {
-      max-width: 1040px;
-      margin: 0 auto;
-      padding: 1.5rem 1.5rem 1.25rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 1rem;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .brand-logo { height: 80px; width: auto; object-fit: contain; display: block; border-radius: 14px; }
-    
-    .brand-text-group { display: flex; flex-direction: column; justify-content: center; }
-    
-    .brand-title {
-      font-family: 'Newsreader', serif;
-      font-size: 2.2rem;
-      font-weight: 600;
-      line-height: 1.15;
-      letter-spacing: -0.02em;
-      color: var(--text-main);
-      text-decoration: none;
-    }
-
-    .brand-tagline {
-      font-size: 0.95rem; font-weight: 500; letter-spacing: 0.03em;
-      color: var(--accent); margin-top: 0.25rem;
-    }
-
-    .container { max-width: 800px; margin: 0 auto; padding: 3rem 1.5rem 6rem; }
-
-    .btn {
-      display: inline-flex; align-items: center; padding: 0.5rem 1rem;
-      border-radius: 6px; font-size: 0.95rem; font-weight: 600; text-decoration: none;
-      transition: all 0.2s ease; border: none; background-color: var(--accent); color: #0F172A;
-    }
-
-    .btn:hover { background-color: var(--accent-hover); }
-
-    footer {
-      padding: 4rem 1.5rem 3rem; text-align: center; color: var(--text-muted);
-      font-size: 0.9rem; border-top: 1px solid var(--border);
-    }
-
-    /* Post-specific typography */
-    .post-header {
-      margin-bottom: 2.5rem;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 2rem;
-    }
-    
-    .post-title {
-      font-family: 'Newsreader', serif;
-      font-size: clamp(2.25rem, 4.5vw, 3.25rem);
-      font-weight: 600;
-      line-height: 1.2;
-      letter-spacing: -0.02em;
-      margin-bottom: 0.75rem;
-    }
-
-    .post-date {
-      font-size: 0.95rem;
-      color: var(--accent);
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    .post-content {
-      font-size: 1.15rem;
-      color: var(--text-muted);
-      line-height: 1.8;
-    }
-
-    .post-content h2, .post-content h3 {
-      color: var(--text-main);
-      font-family: 'Newsreader', serif;
-      margin: 2.5rem 0 1rem;
-    }
-
-    .post-content p { margin-bottom: 1.5rem; }
-    
-    .post-content a { color: var(--accent); text-decoration: none; }
-    .post-content a:hover { text-decoration: underline; }
-    
-    .post-content ul, .post-content ol { margin: 0 0 1.5rem 2rem; }
-    .post-content li { margin-bottom: 0.5rem; }
-  </style>
+  {% include head.html %}
 </head>
 <body>
+  
+  <!-- Slim Dark Header -->
+  <section class="hero-section" style="background-image: none; min-height: auto;">
+    {% include nav.html %}
+  </section>
 
-  <header>
-    <a href="/" style="display: flex; align-items: center; gap: 1rem; text-decoration: none;">
-      <img id="site-logo" src="/kandelstrategieslogo.svg" alt="Kandel Strategies Logo" class="brand-logo">
-      <div class="brand-text-group">
-        <span class="brand-title">Kandel Strategies</span>
-        <span class="brand-tagline">
-          Communications &nbsp;|&nbsp; Media Relations &nbsp;|&nbsp; AI Visibility
-        </span>
-      </div>
-    </a>
-    <nav style="display: flex; gap: 1.5rem; align-items: center;">
-      <a href="/insights" style="color: var(--text-main); text-decoration: none; font-weight: 600;">Insights</a>
-      <a href="/#contact" class="btn">Contact</a>
-    </nav>
-  </header>
-
-  <main class="container">
-    <div class="post-header">
-      <h1 class="post-title">{{ page.title }}</h1>
-      <span class="post-date">{{ page.date | date: "%B %d, %Y" }}</span>
+  <!-- Individual Article Content -->
+  <main class="container" style="padding-top: 4rem; padding-bottom: 4rem;">
+    <article style="max-width: 800px; margin: 0 auto; padding: 3rem; border-radius: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #eaeaea; background-color: #fff;">
       
+      <!-- Featured Image -->
       {% if page.image %}
-        <img src="/public/images/{{ page.image | split: '/' | last }}" alt="{{ page.title }}" style="width: 100%; height: auto; border-radius: 12px; margin-top: 2rem;">
+        {% assign image_filename = page.image | split: '/' | last %}
+        <img src="/public/images/{{ image_filename }}" alt="{{ page.title }}" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 0.5rem; margin-bottom: 2rem;">
       {% endif %}
-    </div>
 
-    <div class="post-content">
-      {{ content }}
-    </div>
+      <h1 style="margin-top: 0; margin-bottom: 0.5rem; font-size: 2.5rem;">{{ page.title }}</h1>
+      <p style="color: #666; font-size: 0.9rem; margin-bottom: 2rem; border-bottom: 1px solid #eaeaea; padding-bottom: 1rem;">
+        {{ page.date | date: "%B %d, %Y" }}
+      </p>
+      
+      <!-- Article Body -->
+      <div style="line-height: 1.8; font-size: 1.1rem; color: #333;">
+        {{ content }}
+      </div>
+      
+      <div style="margin-top: 3rem; border-top: 1px solid #eaeaea; padding-top: 1.5rem;">
+        <a href="/insights" style="color: #38bdf8; font-weight: bold; text-decoration: none;">&larr; Back to all Insights</a>
+      </div>
+    </article>
   </main>
 
-  <footer>
-    <p>Kandel Strategies is a litigation PR and strategic communications consultancy founded by Jason Kandel.</p>
-    <p style="margin-top: 0.5rem;">&copy; 2026 Kandel Strategies. All rights reserved.</p>
-  </footer>
+  {% include footer.html %}
 
+  <!-- Load your dynamic logo -->
+  <script>
+    fetch('/content/site.json?v=' + new Date().getTime())
+      .then(r => r.json())
+      .then(data => {
+        if (data.logo_url) {
+          const logo = document.getElementById('site-logo');
+          if(logo) logo.src = '/public/images/' + data.logo_url.split('/').pop();
+        }
+      })
+      .catch(err => console.error('Logo load failed:', err));
+  </script>
 </body>
 </html>
