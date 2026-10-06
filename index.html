@@ -85,11 +85,12 @@
       gap: 1.25rem;
     }
 
-    .logo-placeholder {
-      color: #F8F6F0;
-      font-size: 1rem;
-      font-weight: 600;
-      letter-spacing: 0.05em;
+    .hero-logo {
+      height: 60px;
+      width: auto;
+      object-fit: contain;
+      border-radius: 12px;
+      display: block;
     }
 
     .company-name {
@@ -382,7 +383,7 @@
   <section class="hero-section" id="hero-section">
     <header class="hero-nav">
       <div class="nav-brand">
-        <span class="logo-placeholder">LOGO</span>
+        <img id="site-logo" src="/kandelstrategieslogo.svg" alt="Kandel Strategies Logo" class="hero-logo">
         <span class="company-name">Kandel Strategies</span>
       </div>
       <nav class="nav-links">
@@ -472,6 +473,11 @@
     fetch('content/site.json')
       .then(r => r.json())
       .then(data => {
+        // Updated to populate logo dynamically
+        if (data.logo_url) {
+          document.getElementById('site-logo').src = '/' + data.logo_url.split('/').pop();
+        }
+
         const headshot = document.getElementById('headshot-img');
         if (data.headshot_url) {
           headshot.src = data.headshot_url;
