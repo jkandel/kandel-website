@@ -54,9 +54,9 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    /* --- New Cinematic Hero Styles --- */
+    /* --- Cinematic Hero Styles --- */
     .hero-section {
-      background-image: url('/public/images/Pacific_cinematic_coastline.jpg'); /* CMS Fallback */
+      background-image: url('/Pacific_cinematic_coastline.jpg');
       background-size: cover;
       background-position: center 30%;
       background-repeat: no-repeat;
@@ -175,7 +175,6 @@
       background-color: #7DD3FC;
       transform: translateY(-2px);
     }
-    /* --- End Hero Styles --- */
 
     .container {
       max-width: 1040px;
@@ -406,13 +405,6 @@
     </div>
   </section>
 
-  <!--
-    DEVELOPER NOTE / FUTURE SELF:
-    All dynamic text containers below are left intentionally empty in the HTML source.
-    Data is fetched asynchronously from `content/site.json` and injected via JavaScript.
-    If a field or array item is deleted in the CMS, the script explicitly clears or hides 
-    the corresponding DOM element so deleted content never lingers as visual fallback text.
-  -->
   <main class="container">
     <section id="section-philosophy">
       <div class="section-label" id="philosophy-header"></div>
@@ -477,19 +469,9 @@
   </footer>
 
   <script>
-    /*
-      DEVELOPER NOTE / FUTURE SELF:
-      This script handles strict dynamic rendering.
-      For key single elements, explicit existence checks (`if/else`) are used to either populate text 
-      or hide/clear the node so content deleted from `site.json` does not remain visible on the DOM.
-    */
     fetch('content/site.json')
       .then(r => r.json())
       .then(data => {
-        // Logo - Disabled for text placeholder per new design specs
-        // if (data.logo_url) document.getElementById('site-logo').src = data.logo_url;
-        
-        // Headshot
         const headshot = document.getElementById('headshot-img');
         if (data.headshot_url) {
           headshot.src = data.headshot_url;
@@ -498,13 +480,11 @@
           headshot.style.display = 'none';
         }
 
-        // Hero Lead Image (Updated to inject as Background Image on the new Hero Section)
         const heroSection = document.getElementById('hero-section');
         if (data.lead_image_url) {
-          heroSection.style.backgroundImage = `url('/public/images/${data.lead_image_url.split('/').pop()}')`;
+          heroSection.style.backgroundImage = `url('/${data.lead_image_url.split('/').pop()}')`;
         }
 
-        // Hero Title & Body
         const heroTitle = document.getElementById('hero-title');
         if (data.hero_title) heroTitle.textContent = data.hero_title;
         else heroTitle.style.display = 'none';
@@ -513,7 +493,6 @@
         if (data.hero_body) heroBody.textContent = data.hero_body;
         else heroBody.style.display = 'none';
 
-        // Philosophy Section
         const philHeader = document.getElementById('philosophy-header');
         if (data.philosophy_header) philHeader.textContent = data.philosophy_header;
         else philHeader.style.display = 'none';
@@ -522,7 +501,6 @@
         if (data.philosophy_quote) philQuote.textContent = data.philosophy_quote;
         else philQuote.style.display = 'none';
 
-        // Services Section
         const servHeader = document.getElementById('services-header');
         if (data.services_header) servHeader.textContent = data.services_header;
         else servHeader.style.display = 'none';
@@ -538,7 +516,6 @@
           grid.innerHTML = '';
         }
 
-        // About Section
         const abtHeader = document.getElementById('about-header');
         if (data.about_header) abtHeader.textContent = data.about_header;
         else abtHeader.style.display = 'none';
@@ -547,7 +524,6 @@
         if (data.about_text) abtText.textContent = data.about_text;
         else abtText.style.display = 'none';
 
-        // FAQs Rendering & Dynamic Schema Generation
         const faqList = document.getElementById('faq-list');
         const faqEntities = [];
         if (data.faqs && data.faqs.length) {
@@ -571,7 +547,6 @@
           faqList.innerHTML = '';
         }
 
-        // Full Schema Graph injected dynamically
         const schemaGraph = {
           "@context": "https://schema.org",
           "@graph": [
