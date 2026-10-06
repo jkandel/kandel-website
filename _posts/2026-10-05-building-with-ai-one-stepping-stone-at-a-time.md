@@ -16,7 +16,7 @@ It started with a question: "Do I really need the Cadillac of content management
 
 From there, I built the site with the guidance of AI, one stepping stone at a time.
 
-I'm now building an AI agent to see what else it can help me do. My first task for it was to study my site and suggest changes to its structure and content that might make it easier for AI tools to understand. That includes back-end architectural additions to code and front-end content type issues such as adding FAQs that answer questions people might be asking online if they're interested in legal marketing want to know about Kandel Strategies.
+I'm now building an AI agent to see what else it can help me do. My first task for it was to study my site and suggest changes to its structure and content that might make it easier for AI tools to understand. That includes back-end architectural additions to code and front-end content type issues such as adding FAQs that answer questions people might be asking online if they're interested in legal marketing and want to know about Kandel Strategies.
 
 I see this AI use as a partnership. I like that the AI suggests ideas or asks me questions and gets me thinking about things I hadn't thought about before. And I like to use my brain to figure out what could be good to add to my site. AI suggests but ultimately I want accurate and useful information that helps people understand what my job is.
 
