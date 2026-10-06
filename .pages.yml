@@ -72,9 +72,10 @@ content:
       - name: date
         label: Date
         type: date
-      - name: draft
-        label: Draft
-        type: boolean        
+      - name: published
+        label: Published
+        type: boolean
+        default: false
       - name: body
         label: Main Text
         type: rich-text
