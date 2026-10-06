@@ -56,8 +56,8 @@
 
     /* --- Cinematic Hero Styles --- */
     .hero-section {
-      background-color: #0F172A; /* Dark fallback color while large image loads */
-      background-image: url('/Pacific_Coast.JPG'); /* Set default to the correct new image */
+      background-color: #0F172A; 
+      background-image: url('/public/images/Pacific_Coast.JPG'); /* Properly routed to images folder */
       background-size: cover;
       background-position: center 30%;
       background-repeat: no-repeat;
@@ -474,14 +474,14 @@
     fetch('content/site.json')
       .then(r => r.json())
       .then(data => {
-        // Logo updated to dynamic logic matching your CMS
+        
         if (data.logo_url) {
           document.getElementById('site-logo').src = '/' + data.logo_url.split('/').pop();
         }
 
         const headshot = document.getElementById('headshot-img');
         if (data.headshot_url) {
-          headshot.src = data.headshot_url;
+          headshot.src = '/public/images/' + data.headshot_url.split('/').pop();
           headshot.style.display = 'block';
         } else {
           headshot.style.display = 'none';
@@ -489,7 +489,8 @@
 
         const heroSection = document.getElementById('hero-section');
         if (data.lead_image_url) {
-          heroSection.style.backgroundImage = `url('/${data.lead_image_url.split('/').pop()}')`;
+          // Fixed path mapping here as well
+          heroSection.style.backgroundImage = `url('/public/images/${data.lead_image_url.split('/').pop()}')`;
         }
 
         const heroTitle = document.getElementById('hero-title');
