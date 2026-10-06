@@ -18,7 +18,7 @@ layout: null
     <h1 class="section-title" style="text-align: left; margin-bottom: 2rem;">Insights</h1>
 
     <div>
-      {% for post in site.insights %}
+      {% for post in site.posts %}
         <div style="margin-bottom: 3rem; padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #eaeaea;">
           <h2 style="margin-top: 0;">
             <a href="{{ post.url | relative_url }}" style="text-decoration: none; color: inherit;">{{ post.title }}</a>
