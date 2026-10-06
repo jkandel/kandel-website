@@ -2,10 +2,9 @@
 title: Building With AI, One Stepping Stone at a Time
 date: 2026-10-05
 published: false
+image: /images/Forest path to beach.jpg
 ---
-AI… AI… AI… With all the fear and loathing out there about AI, I've been trying to find out where it actually helps me do better work.
-
-I recently created a website from scratch for my new legal PR consultancy with the help of Google Gemini. I used mostly free tools, vibe coded the homepage and developed a custom CMS for publishing.
+I recently created my website for my new legal PR consultancy with the help of Google Gemini. I used mostly free tools, vibe coded the homepage and developed a custom CMS for publishing.
 
 AI is useful if you know what to ask it.
 
@@ -15,7 +14,7 @@ And I like to have it ask me the questions it needs up front, rather than get in
 
 It started with a question: "Do I really need the Cadillac of content management systems that I've used throughout my career?" Or could I have Google Gemini, my current AI tool of choice, help me build one? Over the last year, Gemini helped me build my own personal guitar practice app. That taught me to work through a technical project one question at a time. So why not?
 
-From there, I built the site with the guidance of my "AI yogi," one stepping stone at a time.
+From there, I built the site with the guidance of AI, one stepping stone at a time.
 
 I'm now building an AI agent to see what else it can help me do. My first task for it was to study my site and suggest changes to its structure and content that might make it easier for AI tools to understand. That includes back-end architectural additions to code and front-end content type issues such as adding FAQs that answer questions people might be asking online if they're interested in legal marketing want to know about Kandel Strategies.
 
