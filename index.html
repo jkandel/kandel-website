@@ -54,95 +54,133 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    header {
-      max-width: 1040px;
-      margin: 0 auto;
-      padding: 1.5rem 1.5rem 1.25rem;
+    /* --- New Cinematic Hero Styles --- */
+    .hero-section {
+      background-image: url('/public/images/Pacific_cinematic_coastline.jpg'); /* CMS Fallback */
+      background-size: cover;
+      background-position: center 30%;
+      background-repeat: no-repeat;
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-family: 'Newsreader', serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .hero-nav {
+      background: rgba(15, 23, 42, 0.4);
+      padding: 1.5rem 4rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 1rem;
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    .brand-logo {
-      height: 80px;
-      width: auto;
-      object-fit: contain;
-      display: block;
-      border-radius: 14px;
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
     }
 
-    .brand-text-group {
+    .logo-placeholder {
+      color: #F8F6F0;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+    }
+
+    .company-name {
+      color: #F8F6F0;
+      font-size: 1.75rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: #38BDF9;
+      text-decoration: none;
+      font-size: 1.15rem;
+      font-weight: 400;
+      transition: opacity 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      opacity: 0.8;
+    }
+
+    .hero-panel {
+      background-color: #0F172A;
+      width: 100%;
+      padding: 3.5rem 4rem;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 4rem;
+      margin-top: auto; 
+    }
+
+    .hero-text-group {
+      flex: 1;
+      max-width: 900px;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      gap: 1.25rem;
     }
 
-    .brand-title {
-      font-family: 'Newsreader', serif;
-      font-size: 2.2rem;
-      font-weight: 600;
-      line-height: 1.15;
-      letter-spacing: -0.02em;
-      color: var(--text-main);
-    }
-
-    .brand-tagline {
-      font-size: 0.95rem;
+    .hero-headline {
+      color: #F8F6F0;
+      font-size: clamp(2rem, 4vw, 3rem);
       font-weight: 500;
-      letter-spacing: 0.03em;
-      color: var(--accent);
-      margin-top: 0.25rem;
+      line-height: 1.2;
+      margin: 0;
     }
+
+    .hero-body {
+      color: #F8F6F0;
+      font-size: clamp(1.1rem, 2vw, 1.35rem);
+      line-height: 1.6;
+      margin: 0;
+      opacity: 0.9;
+      max-width: 800px;
+    }
+
+    .hero-cta-wrapper {
+      flex-shrink: 0;
+    }
+
+    .cta-button {
+      background-color: #38BDF9;
+      color: #0F172A;
+      font-family: 'Newsreader', serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 1rem 2.5rem;
+      border-radius: 4px;
+      display: inline-block;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #7DD3FC;
+      transform: translateY(-2px);
+    }
+    /* --- End Hero Styles --- */
 
     .container {
       max-width: 1040px;
       margin: 0 auto;
       padding: 0 1.5rem 6rem;
-    }
-
-    .hero {
-      padding: 2.5rem 0 3.5rem;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .hero h1 {
-      font-family: 'Newsreader', serif;
-      font-size: clamp(2.25rem, 4.5vw, 3.75rem);
-      font-weight: 600;
-      line-height: 1.15;
-      letter-spacing: -0.02em;
-      margin-bottom: 1.25rem;
-      max-width: 850px;
-    }
-
-    .hero-content {
-      overflow: hidden;
-    }
-
-    .hero-lead-img {
-      width: 100%;
-      max-width: 850px;
-      height: auto;
-      border-radius: 12px;
-      margin: 0 0 1.5rem 0;
-      border: 1px solid var(--border);
-      display: none; /* Shown dynamically if image URL exists */
-    }
-    
-    .hero p {
-      font-size: 1.2rem;
-      color: var(--text-muted);
-      line-height: 1.7;
-      margin-bottom: 2rem;
-    }
-
-    .cta-group {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      clear: both;
     }
 
     .btn {
@@ -302,17 +340,22 @@
       border: 1px solid var(--border);
     }
 
-    @media (max-width: 768px) {
-      .hero-content {
-        flex-direction: column !important;
-        text-align: left;
+    @media (max-width: 1024px) {
+      .hero-panel {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.5rem;
+        padding: 3rem 2rem;
       }
-      .hero-lead-img {
-        float: none;
-        display: block;
-        width: 100% !important;
-        max-width: 320px !important;
-        margin: 0 0 1.5rem 0;
+      .hero-nav {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.5rem 2rem;
+      }
+      .nav-links {
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
       }
     }
 
@@ -336,19 +379,32 @@
 </head>
 <body>
 
-  <header>
-    <div style="display: flex; align-items: center; gap: 1rem;">
-      <img id="site-logo" src="/kandelstrategieslogo.svg" alt="Kandel Strategies Logo" class="brand-logo">
-      <div class="brand-text-group">
-        <span class="brand-title">Kandel Strategies</span>
-        <span class="brand-tagline">Communications &nbsp;|&nbsp; Media Relations &nbsp;|&nbsp; AI Visibility</span>
+  <!-- Full Bleed Hero Section -->
+  <section class="hero-section" id="hero-section">
+    <header class="hero-nav">
+      <div class="nav-brand">
+        <span class="logo-placeholder">LOGO</span>
+        <span class="company-name">Kandel Strategies</span>
+      </div>
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="#section-about">About</a>
+        <a href="#section-services">Services</a>
+        <a href="/insights">Insights</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <div class="hero-panel">
+      <div class="hero-text-group">
+        <h1 class="hero-headline" id="hero-title">Media Strategy Tailored for Attorneys and Legal Organizations</h1>
+        <p class="hero-body" id="hero-body">Kandel Strategies manages reporter outreach, connects journalists with law firm partners and executives, to secure earned media coverage. Founded by former journalist Jason Kandel, the firm provides strategic media relations and AI visibility for law firms and executives.</p>
+      </div>
+      <div class="hero-cta-wrapper">
+        <a href="#contact" class="cta-button">Schedule a Free Consultation</a>
       </div>
     </div>
-    <nav style="display: flex; gap: 1.5rem; align-items: center;">
-      <a href="/insights" style="color: var(--accent); text-decoration: none; font-weight: 600;">Insights</a>
-      <a href="#contact" class="btn btn-primary" style="padding: 0.5rem 1rem;">Contact</a>
-    </nav>
-  </header>
+  </section>
 
   <!--
     DEVELOPER NOTE / FUTURE SELF:
@@ -358,17 +414,6 @@
     the corresponding DOM element so deleted content never lingers as visual fallback text.
   -->
   <main class="container">
-    <div class="hero" style="padding: 2.5rem 0 3.5rem;">
-      <h1 class="hero-title" id="hero-title" style="font-size: clamp(1.8rem, 4vw, 3rem); margin-bottom: 1.5rem;"></h1>
-      <div class="hero-content">
-        <img id="hero-lead-img" src="" alt="Kandel Strategies Lead Image" class="hero-lead-img" style="width: 100%; max-width: 850px; height: auto; border-radius: 12px; border: 1px solid var(--border);">
-        <p class="hero-body" id="hero-body" style="font-size: 1.15rem; color: var(--text-muted); line-height: 1.7; max-width: 850px; margin-bottom: 1.75rem;"></p>
-      </div>
-      <div class="cta-group">
-        <a href="#contact" class="btn btn-primary">Get in Touch</a>
-      </div>
-    </div>
-
     <section id="section-philosophy">
       <div class="section-label" id="philosophy-header"></div>
       <blockquote class="philosophy-quote philosophy-text" id="philosophy-quote"></blockquote>
@@ -441,8 +486,8 @@
     fetch('content/site.json')
       .then(r => r.json())
       .then(data => {
-        // Logo
-        if (data.logo_url) document.getElementById('site-logo').src = data.logo_url;
+        // Logo - Disabled for text placeholder per new design specs
+        // if (data.logo_url) document.getElementById('site-logo').src = data.logo_url;
         
         // Headshot
         const headshot = document.getElementById('headshot-img');
@@ -453,13 +498,10 @@
           headshot.style.display = 'none';
         }
 
-        // Hero Lead Image
-        const leadImg = document.getElementById('hero-lead-img');
+        // Hero Lead Image (Updated to inject as Background Image on the new Hero Section)
+        const heroSection = document.getElementById('hero-section');
         if (data.lead_image_url) {
-          leadImg.src = data.lead_image_url;
-          leadImg.style.display = 'block';
-        } else {
-          leadImg.style.display = 'none';
+          heroSection.style.backgroundImage = `url('/public/images/${data.lead_image_url.split('/').pop()}')`;
         }
 
         // Hero Title & Body
