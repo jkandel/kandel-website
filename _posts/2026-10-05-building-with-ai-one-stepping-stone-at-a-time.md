@@ -1,7 +1,7 @@
 ---
 title: Building With AI, One Stepping Stone at a Time
 date: 2026-10-05
-draft: true
+published: false
 ---
 AI… AI… AI… With all the fear and loathing out there about AI, I've been trying to find out where it actually helps me do better work.
 
