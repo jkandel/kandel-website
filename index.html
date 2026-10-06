@@ -384,7 +384,8 @@
   <section class="hero-section" id="hero-section">
     <header class="hero-nav">
       <div class="nav-brand">
-        <img id="site-logo" src="/kandelstrategieslogo.svg" alt="Kandel Strategies Logo" class="hero-logo">
+        <!-- Pointed explicitly to /public/images/ so it shows instantly -->
+        <img id="site-logo" src="/public/images/kandelstrategieslogo.svg" alt="Kandel Strategies Logo" class="hero-logo">
         <span class="company-name">Kandel Strategies</span>
       </div>
       <nav class="nav-links">
@@ -476,7 +477,8 @@
       .then(data => {
         
         if (data.logo_url) {
-          document.getElementById('site-logo').src = '/' + data.logo_url.split('/').pop();
+          // Pointed Javascript dynamic loader perfectly to /public/images/
+          document.getElementById('site-logo').src = '/public/images/' + data.logo_url.split('/').pop();
         }
 
         const headshot = document.getElementById('headshot-img');
@@ -489,7 +491,6 @@
 
         const heroSection = document.getElementById('hero-section');
         if (data.lead_image_url) {
-          // Fixed path mapping here as well
           heroSection.style.backgroundImage = `url('/public/images/${data.lead_image_url.split('/').pop()}')`;
         }
 
