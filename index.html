@@ -5,8 +5,27 @@ layout: null
 <html lang="en">
 <head>
   {% include head.html %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://kandelstrategies.com/#website",
+        "url": "https://kandelstrategies.com",
+        "name": "Kandel Strategies"
+      },
+      {
+        "@type": ["Organization", "ProfessionalService"],
+        "@id": "https://kandelstrategies.com/#organization",
+        "name": "Kandel Strategies",
+        "url": "https://kandelstrategies.com"
+      }
+    ]
+  }
+  </script>
 </head>
-<body>
+  <body>
 
   <!-- Full Bleed Hero Section -->
   <section class="hero-section" id="hero-section" style="background-image: none;">
