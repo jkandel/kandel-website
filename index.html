@@ -38,7 +38,11 @@ layout: null
       <h2 class="section-title" id="services-header"></h2>
       <div class="services-grid" id="services-grid"></div>
     </section>
-
+    <section id="how-it-works" style="padding: 2rem 0; display: none;">
+      <h2 class="section-title" id="hiw-header"></h2>
+      <div id="hiw-grid" style="display: flex; gap: 2rem; flex-wrap: wrap;"></div>
+    </section>
+    
     <section id="section-about">
       <h2 class="section-title" id="about-header"></h2>
       <div class="about-content">
@@ -129,6 +133,16 @@ layout: null
             </div>`).join('');
         } else {
           grid.innerHTML = '';
+        }
+        const hiwSection = document.getElementById('how-it-works');
+        if (data.how_it_works_steps && data.how_it_works_steps.length) {
+          hiwSection.style.display = 'block';
+          if (data.how_it_works_header) document.getElementById('hiw-header').textContent = data.how_it_works_header;
+          document.getElementById('hiw-grid').innerHTML = data.how_it_works_steps.map(s => `
+            <div style="flex: 1; min-width: 250px; background: rgba(255, 255, 255, 0.05); padding: 2rem; border-radius: 1rem;">
+              <h3 style="color: #38BDF8; margin-top: 0;">${s.title}</h3>
+              <p style="font-size: 0.95rem; margin-bottom: 0; line-height: 1.6;">${s.description}</p>
+            </div>`).join('');
         }
         const abtHeader = document.getElementById('about-header');
         if (data.about_header) abtHeader.textContent = data.about_header;
