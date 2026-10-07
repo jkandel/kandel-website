@@ -43,6 +43,20 @@ content:
           - label: Service Description
             name: description
             type: text
+      - name: how_it_works_header
+        label: How It Works Header
+        type: string
+      - name: how_it_works_steps
+        label: How It Works Steps
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: description
+            label: Description
+            type: string
       - label: About Header
         name: about_header
         type: string
