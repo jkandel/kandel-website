@@ -21,6 +21,21 @@
       "description": "Structuring your public record, published work, and media coverage so tools such as Google AI Overviews and Gemini, ChatGPT, and Claude cite your expertise accurately."
     }
   ],
+  "how_it_works_header": "How We Work",
+  "how_it_works_steps": [
+    {
+      "title": "1. Discovery & Audit",
+      "description": "We analyze your current media footprint and identify the distinct narratives that will elevate your authority."
+    },
+    {
+      "title": "2. Strategic Outreach",
+      "description": "We connect you directly with top-tier journalists looking for your specific legal expertise."
+    },
+    {
+      "title": "3. Amplification",
+      "description": "We optimize your earned media so your expertise remains highly visible in search results and AI overviews."
+    }
+  ],
   "about_header": "Credentials",
   "about_text": "Jason Kandel is a legal PR strategist and former journalist, serving as the founder and principal of Kandel Strategies. He draws on over two decades of newsroom experience, including reporting for the Los Angeles Times, Thomson Reuters, NBC4 Los Angeles, and LAist/KPCC, to manage high-stakes legal PR and strategic media outreach.",
   "faqs": [
