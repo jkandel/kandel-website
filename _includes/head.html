@@ -1,8 +1,9 @@
+<!-- Document Setup -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kandel Strategies | Public Relations & Media Strategy</title>
 
-<!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) - Analytics tracking -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ECM1DVCYCL"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -11,26 +12,27 @@
   gtag('config', 'G-ECM1DVCYCL');
 </script>
 
-<!-- Open Graph / Social & AI Snippet Metadata -->
+<!-- Open Graph / Social & AI Snippet Metadata - Controls social sharing previews -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://kandelstrategies.com/">
 <meta property="og:title" content="Kandel Strategies | Public Relations & Media Strategy">
 <meta property="og:description" content="Public relations and strategic communications consulting specializing in legal PR and media strategy for attorneys and law firms.">
 <meta property="og:image" content="https://lh3.googleusercontent.com/d/1a-4yO3eekafzu7nwsVD0T1GIle8Myu41">
 
-<!-- Twitter / X -->
+<!-- Twitter / X - Specific social sharing metadata -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Kandel Strategies | Public Relations & Media Strategy">
 <meta name="twitter:description" content="Public relations and strategic communications consulting specializing in legal PR and media strategy for attorneys and law firms.">
 <meta name="twitter:image" content="https://lh3.googleusercontent.com/d/1a-4yO3eekafzu7nwsVD0T1GIle8Myu41">
 
-<!-- Favicon & Fonts -->
+<!-- Favicon & Fonts - Browser tab logo and Google Fonts import -->
 <link rel="icon" type="image/svg+xml" href="/public/images/kandelstrategieslogo.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
 
 <style>
+  /* Base CSS: Universal color palette and typography */
   :root {
     --bg: #0F172A;
     --card-bg: #1E293B;
@@ -55,8 +57,9 @@
     -webkit-font-smoothing: antialiased;
   }
 
+  /* Hero Layout & Text: Main visual landing area styling */
   .hero-section {
-    background-color: #0F172A; 
+    background-color: #000000; 
     background-image: url('/public/images/pacific_cinematic_coastline.jpg'); 
     background-size: cover;
     background-position: center 30%;
@@ -71,6 +74,7 @@
     padding: 0;
   }
 
+  /* Hero Navigation: Top menu bar styling */
   .hero-nav {
     background: rgba(15, 23, 42, 0.4);
     padding: 1.5rem 4rem;
@@ -119,7 +123,7 @@
     opacity: 0.8;
   }
 
-.hero-panel {
+  .hero-panel {
     background: transparent;
     width: 100%;
     max-width: 1040px;
@@ -162,6 +166,7 @@
     flex-shrink: 0;
   }
 
+  /* Buttons: Clickable action elements and hover states */
   .cta-button {
     background-color: #38BDF9;
     color: #0F172A;
@@ -209,6 +214,7 @@
     transform: translateY(-1px);
   }
 
+  /* Page Sections: Spacing and headers outside the hero */
   section {
     padding: 4.5rem 0;
     border-bottom: 1px solid var(--border);
@@ -220,187 +226,3 @@
     font-weight: 700;
     letter-spacing: 0.1em;
     color: var(--accent);
-    margin-bottom: 1rem;
-  }
-
-  .section-title {
-    font-family: 'Newsreader', serif;
-    font-size: 2.25rem;
-    font-weight: 600;
-    margin-bottom: 2.5rem;
-    letter-spacing: -0.01em;
-  }
-
-  .philosophy-quote {
-    font-family: 'Newsreader', serif;
-    font-size: 1.35rem;
-    font-style: italic;
-    line-height: 1.85;
-    color: var(--text-main);
-    max-width: 880px;
-    border-left: 3px solid var(--accent);
-    padding-left: 2rem;
-    margin-top: 1.25rem;
-  }
-
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-  }
-
-  .service-card {
-    background: var(--card-bg);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 2rem;
-    transition: border-color 0.2s ease;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .service-card:hover {
-    border-color: var(--accent);
-  }
-
-  .service-card h3 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    line-height: 1.35;
-    color: var(--text-main);
-  }
-
-  .service-desc {
-    font-size: 0.95rem;
-    color: var(--text-muted);
-    margin-top: 0.85rem;
-    line-height: 1.6;
-  }
-
-  .about-content {
-    font-size: 1.25rem;
-    color: var(--text-muted);
-    max-width: 800px;
-    line-height: 1.8;
-  }
-
-  .contact-form {
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-  }
-
-  .form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .form-group label {
-    font-size: 0.95rem;
-    font-weight: 500;
-    color: var(--text-main);
-  }
-
-  .form-group input,
-  .form-group textarea {
-    width: 100%;
-    padding: 0.75rem 1rem;
-    background-color: var(--card-bg);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    color: var(--text-main);
-    font-family: inherit;
-    font-size: 1rem;
-  }
-
-  .form-group input:focus,
-  .form-group textarea:focus {
-    outline: none;
-    border-color: var(--accent);
-  }
-
-  .form-group textarea {
-    min-height: 120px;
-    resize: vertical;
-  }
-
-  footer {
-    padding: 4rem 1.5rem 3rem;
-    text-align: center;
-    color: var(--text-muted);
-    font-size: 0.9rem;
-  }
-
-  .profile-photo {
-    float: left;
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 14px;
-    margin: 0.25rem 2rem 1.25rem 0;
-    border: 1px solid var(--border);
-  }
-
-  @media (max-width: 1024px) {
-    .hero-panel {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 2.5rem;
-      padding: 3rem 2rem;
-    }
-    #hero-section {
-    background-image: none !important;
-  }
-    .hero-nav {
-      flex-direction: column;
-      gap: 1.5rem;
-      padding: 1.5rem 2rem;
-    }
-    .nav-links {
-      gap: 1.5rem;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  }
-
-  @media (max-width: 600px) {
-    .profile-photo-container {
-      float: none !important;
-      margin: 0 0 1rem 0 !important;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .profile-photo {
-      float: none !important;
-      margin: 0 0 0.5rem 0 !important;
-      width: 150px;
-      height: 150px;
-    }
-  }
-</style>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    color: var(--text-main);
-    line-height: 1.6;
-  }
-  a {
-    color: #38BDF8;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  h1, h2, h3 {
-    font-family: 'Newsreader', serif;
-    color: var(--text-main);
-    font-weight: 600;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-  }
-</style>
