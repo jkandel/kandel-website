@@ -3,7 +3,7 @@
   "headshot_url": "profile.png",
   "lead_image_url": "hero_image_blur.png",
   "hero_title": "My Journalist’s Eye. Your Legal Expertise, Clearly Shared.",
-  "hero_body": "Kandel Strategies helps lawyers share relevant expertise with reporters. Founded by former journalist Jason Kandel, the firm gets to know attorneys and their work, identifies stories where their perspectives fit, and handles media outreach. We also help firms turn their legal expertise into clear answers people can find through AI.",
+  "hero_body": "Kandel Strategies helps lawyers share relevant expertise with reporters. Founded by former journalist Jason Kandel, the firm gets to know attorneys and their work, identifies stories where their perspectives fit, and handles media outreach. I also help firms turn their legal expertise into clear answers people can find through AI.",
   "philosophy_header": "Legal PR Philosophy & Communication Approach",
   "philosophy_quote": "I start by listening for what an attorney knows deeply and cares about. Then I look for where that knowledge can genuinely help a reporter or someone trying to understand their legal options. The goal isn't to manufacture authority. It's to make real expertise useful, visible, and easy to verify.",
   "services_header": "Core Practice Areas: Legal PR, Media Relations & AI Visibility",
@@ -21,19 +21,19 @@
       "description": "Structuring your public record, published work, and media coverage so tools such as Google AI Overviews and Gemini, ChatGPT, and Claude cite your expertise accurately."
     }
   ],
-  "how_it_works_header": "How We Work",
+  "how_it_works_header": "How I Work",
   "how_it_works_steps": [
     {
       "title": "1. Discovery & Audit",
-      "description": "We analyze your current digital footprint and identify the key messages that make you stand out."
+      "description": "I analyze your current digital footprint and identify the key messages that make you stand out."
     },
     {
       "title": "2. Strategic Outreach",
-      "description": "We connect you directly with top-tier journalists looking for your specific legal expertise."
+      "description": "I connect you directly with top-tier journalists looking for your specific legal expertise."
     },
     {
       "title": "3. Amplification",
-      "description": "We structure your media coverage to help your expertise stand out in search results and AI answers."
+      "description": "I structure your media coverage to help your expertise stand out in search results and AI answers."
     }
   ],
   "about_header": "Credentials",
@@ -49,11 +49,11 @@
     },
     {
       "question": "What types of legal matters does Kandel Strategies provide media strategy for?",
-      "answer": "We provide legal PR and media strategy for high-stakes legal disputes, including commercial litigation, intellectual property disputes, entertainment and sports matters, white-collar defense, employment suits, and regulatory investigations."
+      "answer": "I provide legal PR and media strategy for high-stakes legal disputes, including commercial litigation, intellectual property disputes, entertainment and sports matters, white-collar defense, employment suits, and regulatory investigations."
     },
     {
       "question": "How does Kandel Strategies work with clients?",
-      "answer": "We offer flexible engagement options tailored to legal matters, including ongoing monthly retainers for firm-wide media relations and project-based support for active litigation."
+      "answer": "I offer flexible engagement options tailored to legal matters, including ongoing monthly retainers for firm-wide media relations and project-based support for active litigation."
     },
     {
       "question": "Where is Kandel Strategies located and who do you serve?",
@@ -61,7 +61,7 @@
     },
     {
       "question": "How can I schedule a consultation with Kandel Strategies?",
-      "answer": "You can schedule a confidential consultation by using the contact form on our website or emailing jason@kandelstrategies.com. We provide same-day responses for urgent litigation and crisis inquiries."
+      "answer": "You can schedule a confidential consultation by using the contact form on this website or emailing jason@kandelstrategies.com."
     }
   ]
 }
