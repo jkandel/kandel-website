@@ -9,3 +9,5 @@ Allow: /
 
 User-agent: PerplexityBot
 Allow: /
+
+Sitemap: https://kandelstrategies.com/sitemap.xml
