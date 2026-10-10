@@ -41,7 +41,27 @@
     --accent: #38BDF8;
     --accent-hover: #7DD3FC;
   }
-
+.skip-link {
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  
+  .skip-link:focus {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    background-color: #0F172A;
+    color: #ffffff;
+    padding: 10px;
+    z-index: 1000;
+  }
   * {
     box-sizing: border-box;
     margin: 0;
