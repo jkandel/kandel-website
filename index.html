@@ -155,11 +155,14 @@ layout: null
         const hiwSection = document.getElementById('how-it-works');
         if (data.how_it_works_steps && data.how_it_works_steps.length) {
           hiwSection.style.display = 'block';
-          if (data.how_it_works_header) document.getElementById('hiw-grid').innerHTML = data.how_it_works_steps.map(s => `
-                <div class="service-card">
-                  <h3>${s.title}</h3>
-                  <p class="service-desc">${s.description}</p>
-                </div>`).join('');
+          
+          if (data.how_it_works_header) document.getElementById('hiw-header').textContent = data.how_it_works_header;
+          
+          document.getElementById('hiw-grid').innerHTML = data.how_it_works_steps.map(s => `
+            <div class="service-card">
+              <h3>${s.title}</h3>
+              <p class="service-desc">${s.description}</p>
+            </div>`).join('');
         }
         const abtHeader = document.getElementById('about-header');
         if (data.about_header) abtHeader.textContent = data.about_header;
