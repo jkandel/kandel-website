@@ -4,7 +4,7 @@ date: 2026-10-14
 published: true
 image: /images/shutterstock_ai_human.jpg
 ---
-While building my company website, I read a fascinating post by internet entrepreneur [Joost de Valk](https://joost.blog/about-me/) on [The future of the website](https://joost.blog/future-of-the-website/). He writes about what I'm seeing firsthand: He writes about what I'm seeing firsthand: Websites increasingly need to be useful to both people and AI tools.  
+While building my company website, I read a fascinating post by internet entrepreneur [Joost de Valk](https://joost.blog/about-me/) on [The future of the website](https://joost.blog/future-of-the-website/). He writes about what I'm seeing firsthand: Websites increasingly need to be useful to both people and AI tools.
 
 This idea is not new. But it's worth repeating.
 
