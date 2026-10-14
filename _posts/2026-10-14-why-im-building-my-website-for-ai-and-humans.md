@@ -18,6 +18,6 @@ The website is doing a lot of work.
 
 On [kandelstrategies.com](http://kandelstrategies.com), I'm showing what that looks like.
 
-When a New York Times reporter was writing about problem neighbors and looking for an expert, I connected her with a Los Angeles mediator I worked with. The client had recently told me why mediation could help neighbors reach an agreement. The reporter interviewed and quoted her in the article "[How to Deal With a Problem Neighbor.](https://www.nytimes.com/2026/04/14/realestate/how-to-deal-with-a-problem-neighbor.html)" Linking to the published article lets people who do come to your website check that work for themselves.
+When a New York Times reporter was writing about problem neighbors and looking for an expert, I connected her with a Los Angeles mediator I worked with. The client had recently told me why mediation could help neighbors reach an agreement. The reporter interviewed and quoted her in the article [How to Deal With a Problem Neighbor.](https://www.nytimes.com/2026/04/14/realestate/how-to-deal-with-a-problem-neighbor.html) Linking to the published article lets people who do come to your website check that work for themselves.
 
 Ultimately, human communication still drives trust. There is a big opportunity for those who can combine that clarity with an understanding of the ever-changing tech landscape, whether it's AI or whatever comes next. Tech changes how people find you. It doesn't replace your lived experience.
