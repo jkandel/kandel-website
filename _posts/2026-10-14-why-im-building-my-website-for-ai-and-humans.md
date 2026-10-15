@@ -1,5 +1,5 @@
 ---
-title: Why I'm building my website for AI AND humans
+title: Why I'm building my website for humans and AI
 date: 2026-10-14
 published: true
 image: /images/shutterstock_ai_human.jpg
