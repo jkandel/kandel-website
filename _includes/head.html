@@ -4,13 +4,20 @@
 <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}Public relations and communications consulting specializing in legal PR and media relations for attorneys and law firms.{% endif %}">
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ECM1DVCYCL"></script>
+<!-- Deferred Google tag (gtag.js) -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-ECM1DVCYCL');
+
+  // Load the script only after the initial page load finishes
+  window.addEventListener('load', function() {
+    var gScript = document.createElement('script');
+    gScript.src = "https://www.googletagmanager.com/gtag/js?id=G-ECM1DVCYCL";
+    gScript.async = true;
+    document.head.appendChild(gScript);
+  });
 </script>
 
 <!-- Open Graph / Social & AI Snippet Metadata -->
