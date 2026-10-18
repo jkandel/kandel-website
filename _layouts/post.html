@@ -5,6 +5,18 @@ layout: null
 <html lang="en">
 <head>
   {% include head.html %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "{{ page.title | escape }}",
+    "datePublished": "{{ page.date | date_to_xmlschema }}",
+    "author": {
+      "@type": "Person",
+      "name": "{{ page.author | default: site.author | escape }}"
+    }
+  }
+  </script>
 </head>
 <body>
   
