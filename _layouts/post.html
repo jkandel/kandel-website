@@ -11,9 +11,13 @@ layout: null
     "@type": "BlogPosting",
     "headline": "{{ page.title | escape }}",
     "datePublished": "{{ page.date | date_to_xmlschema }}",
+    {% if page.image %}
+    "image": "https://kandelstrategies.com/public/images/{{ page.image | split: '/' | last }}",
+    {% endif %}
     "author": {
       "@type": "Person",
-      "name": "{{ page.author | default: site.author | escape }}"
+      "name": "{{ page.author | default: site.author | default: 'Jason Kandel' | escape }}",
+      "url": "https://kandelstrategies.com"
     }
   }
   </script>
