@@ -1,8 +1,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kandel Strategies | Public Relations & AI Visibility for Law Firms</title>
-<meta name="description" content="Public relations and communications consulting specializing in legal PR and media relations for attorneys and law firms.">
+<title>{% if page.title %}{{ page.title }} | Kandel Strategies{% else %}Kandel Strategies | Public Relations & AI Visibility for Law Firms{% endif %}</title>
+<meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}Public relations and communications consulting specializing in legal PR and media relations for attorneys and law firms.{% endif %}">
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ECM1DVCYCL"></script>
 <script>
@@ -13,17 +14,17 @@
 </script>
 
 <!-- Open Graph / Social & AI Snippet Metadata -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://kandelstrategies.com/">
-<meta property="og:title" content="Kandel Strategies | Public Relations & Media Strategy">
-<meta property="og:description" content="Communication and AI Visibility for law firms.">
-<meta property="og:image" content="https://lh3.googleusercontent.com/d/1a-4yO3eekafzu7nwsVD0T1GIle8Myu41">
+<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}Kandel Strategies | Public Relations & Media Strategy{% endif %}">
+<meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}Communication and AI Visibility for law firms.{% endif %}">
+<meta property="og:image" content="{% if page.image %}https://kandelstrategies.com/public/images/{{ page.image | split: '/' | last }}{% else %}https://lh3.googleusercontent.com/d/1a-4yO3eekafzu7nwsVD0T1GIle8Myu41{% endif %}">
 
 <!-- Twitter / X -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Kandel Strategies | Public Relations & Media Strategy">
-<meta name="twitter:description" content="Public relations and strategic communications consulting specializing in legal PR and media strategy for attorneys and law firms.">
-<meta name="twitter:image" content="https://lh3.googleusercontent.com/d/1a-4yO3eekafzu7nwsVD0T1GIle8Myu41">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}Kandel Strategies | Public Relations & Media Strategy{% endif %}">
+<meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}Public relations and strategic communications consulting specializing in legal PR and media strategy for attorneys and law firms.{% endif %}">
+<meta name="twitter:image" content="{% if page.image %}https://kandelstrategies.com/public/images/{{ page.image | split: '/' | last }}{% else %}https://lh3.googleusercontent.com/d/1a-4yO3eekafzu7nwsVD0T1GIle8Myu41{% endif %}">
 
 <!-- Favicon & Fonts -->
 <link rel="icon" type="image/svg+xml" href="/public/images/kandelstrategieslogo.svg">
@@ -41,7 +42,7 @@
     --accent: #38BDF8;
     --accent-hover: #7DD3FC;
   }
-.skip-link {
+  .skip-link {
     position: absolute;
     top: -1000px;
     left: -1000px;
@@ -140,7 +141,7 @@
     opacity: 0.8;
   }
 
-.hero-panel {
+  .hero-panel {
     background: transparent;
     width: 100%;
     max-width: 1040px;
@@ -373,7 +374,7 @@
     }
     #hero-section {
     background-image: none !important;
-  }
+    }
     .hero-nav {
       flex-direction: column;
       gap: 1.5rem;
