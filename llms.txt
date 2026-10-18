@@ -6,11 +6,15 @@
 Kandel Strategies is founded by Jason Kandel, a former Southern California newsroom journalist with extensive reporting experience across print, digital, television, and radio (including the Los Angeles Times, NBC4 Southern California, Thomson Reuters, and KPCC).
 
 ## Key Services
-- **Communications:** Plain-English messaging for complex legal matters and corporate positioning.
+- **Communications:** Clear messaging for complex legal matters and corporate positioning.
 - **Media Relations:** Earned coverage, journalist outreach, and reporter interview preparation for attorneys.
 - **Litigation PR:** Strategic reputation management and crisis communications during high-profile legal disputes.
 - **AI Visibility:** Structuring legal expertise and media coverage for accurate indexing by search engines and AI engines.
 
+## Site Map for AI Agents
+- [Home Page](https://kandelstrategies.com/)
+- [Insights & Blog](https://kandelstrategies.com/insights)
+
 ## Contact & Profile
-- Website: https://kandelstrategies.com
-- Founder LinkedIn: https://www.linkedin.com/in/jasonkandel/
+- Website: [Kandel Strategies](https://kandelstrategies.com)
+- Founder LinkedIn: [Jason Kandel LinkedIn](https://www.linkedin.com/in/jasonkandel/)
