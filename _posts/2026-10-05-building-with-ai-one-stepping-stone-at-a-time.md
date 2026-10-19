@@ -1,5 +1,5 @@
 ---
-title: Building With AI, One Stepping Stone at a Time
+title: Building with AI, one stepping stone at a time
 date: 2026-10-05
 published: true
 image: /images/Forest-path-to-beach.jpg
