@@ -96,3 +96,14 @@ content:
       - name: body
         label: Main Text
         type: rich-text
+      - name: experience
+        label: Experience Page
+        type: file
+        path: experience.html
+        fields:
+        - name: title
+          label: Title
+          type: string
+        - name: body
+          label: Content
+          type: rich-text
