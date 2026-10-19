@@ -6,18 +6,27 @@
 
 <!-- Deferred Google tag (gtag.js) -->
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-ECM1DVCYCL');
+  function loadGtag() {
+    if (window.gtagLoaded) return;
+    window.gtagLoaded = true;
 
-  // Load the script only after the initial page load finishes
-  window.addEventListener('load', function() {
     var gScript = document.createElement('script');
     gScript.src = "https://www.googletagmanager.com/gtag/js?id=G-ECM1DVCYCL";
     gScript.async = true;
     document.head.appendChild(gScript);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', 'G-ECM1DVCYCL');
+  }
+
+  // Trigger on user interaction or fallback timer
+  ['touchstart', 'scroll', 'mousemove', 'keydown'].forEach(function(evt) {
+    window.addEventListener(evt, loadGtag, { once: true, passive: true });
   });
+  setTimeout(loadGtag, 3500);
 </script>
 
 <!-- Open Graph / Social & AI Snippet Metadata -->
