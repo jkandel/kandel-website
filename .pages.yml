@@ -7,7 +7,7 @@ content:
     label: Homepage Content
     type: file
     path: content/site.json
-    format: json
+    format: raw
     fields:
       - label: Logo Image URL
         name: logo_url
@@ -101,7 +101,7 @@ content:
     label: Experience Page
     type: file
     path: content/experience.json
-    format: json
+    format: raw
     fields:
       - name: list
         label: Experience Items
