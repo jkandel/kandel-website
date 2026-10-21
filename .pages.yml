@@ -96,10 +96,11 @@ content:
       - name: body
         label: Main Text
         type: rich-text
-  - name: experience
+- name: experience
     label: Experience Page
     type: file
     path: content/experience.json
+    format: json
     fields:
       - name: list
         label: Experience Items
