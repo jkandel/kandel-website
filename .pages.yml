@@ -99,11 +99,18 @@ content:
   - name: experience
     label: Experience Page
     type: file
-    path: experience.html
+    path: content/experience.json
+    list: true
     fields:
-      - name: title
-        label: Title
+      - name: role
+        label: Role Title
         type: string
-      - name: body
-        label: Content
-        type: rich-text
+      - name: company
+        label: Company
+        type: string
+      - name: dates
+        label: Dates
+        type: string
+      - name: description
+        label: Description
+        type: text
