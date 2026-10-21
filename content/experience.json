@@ -1,58 +1,76 @@
-{
-  "list": [
-    {
-      "role": "Founder & CEO",
-      "company": "Kandel Strategies",
-      "dates": "Jul 2026 - Present",
-      "description": "Turning complex legal developments and insights about new regulations into clear, timely story pitches that journalists can immediately use. Securing authoritative media coverage so firms are consistently cited when people and AI search tools look for trusted legal expertise. Placing attorneys directly into top-tier national news articles in publications such as The New York Times and the Associated Press."
-    },
-    {
-      "role": "Content Chief",
-      "company": "WeVote",
-      "dates": "Sep 2025 - Sep 2026",
-      "description": "Directed a team of writers in producing accessible election guides that debunked misinformation and empowered voters to make informed decisions. Refined articles and guides, translating dense legal text and complex ballot measures into clear, easily digestible resources for voters. Developed the organization's first AI policy and editorial style guide for research and storytelling."
-    },
-    {
-      "role": "Newsletter Writer/Content Developer",
-      "company": "WeVote",
-      "dates": "May 2025 - Sep 2025",
-      "description": "Planned content and wrote articles focused on boosting voter turnout and civic participation. Coached new writers on research, interviewing, source checking, and writing on deadline."
-    },
-    {
-      "role": "Senior Public Relations Specialist & Chief AI Strategist",
-      "company": "Newsroom Public Relations",
-      "dates": "Sep 2025 - Jun 2026",
-      "description": "Placed attorney clients in television and national print outlets, including The New York Times, The Guardian, and the Miami Herald, to provide expert commentary on criminal cases, neighbor disputes, and new state laws. Wrote press materials, quote sheets, and bios that helped legal clients land consistent coverage in national news outlets."
-    },
-    {
-      "role": "Editor",
-      "company": "Law & Crime",
-      "dates": "Jan 2023 - Mar 2025",
-      "description": "Led breaking news coverage, managing reporting, editing, headlines. Reported top-performing coverage on major legal and civil rights cases, including Jan. 6 prosecutions. Edited articles for accuracy, AP Style, and clarity while mentoring staff reporters."
-    },
-    {
-      "role": "Digital News Producer",
-      "company": "NBCUniversal, Inc.",
-      "dates": "Dec 2011 - Aug 2022",
-      "description": "Won 1st place from the Los Angeles Press Club for a 6-part series that set site records for user engagement and traffic growth. Produced a 3-part series on an LA County industrial explosion that prompted EPA Superfund cleanup and drove state-level policy reforms. Managed breaking news crisis response, built interactive visuals, edited videos, and analyzed public records for major investigative projects."
-    },
-    {
-      "role": "Reporter",
-      "company": "Thomson Reuters",
-      "dates": "Jul 2011 - Dec 2011",
-      "description": "Broke exclusive national news on deadline, including violent biker gang disputes and police surveillance of anti-Wall Street activists. Covered high-profile infrastructure stories, leading national reporting on \"Carmageddon\" and the $1B I-405 freeway closure. Reported on major civil rights developments, covering the 102nd annual NAACP convention and national voter ID law debates."
-    },
-    {
-      "role": "Online Managing Editor",
-      "company": "Southern California Public Radio (American Public Media Group)",
-      "dates": "Aug 2009 - Jul 2011",
-      "description": "Spearheaded newsroom digital transformation, building workflows, content calendars, and blogs that drove significant year-over-year web and social traffic. Orchestrated a website redesign that increased traffic by 50%, using audience data trends and post-coverage debriefs to elevate the station's profile and deliver award-winning projects. Designed and executed a modern digital strategy, implementing a round-the-clock staffing plan to keep social channels updated with real-time, accurate news."
-    },
-    {
-      "role": "Online Editor",
-      "company": "Los Angeles Daily News (Southern California News Group)",
-      "dates": "Oct 2008 - Aug 2009",
-      "description": "Led breaking news coverage for major local events — including wildfires, elections, and a deadly train crash — growing site page views by 32% to nearly 77 million. Produced the outlet's first database projects, including public employee salary tools that generated nearly 3M total page views and consistently topped site traffic charts. Directed online packaging, shot and edited video, and trained newsroom colleagues on CMS publishing, video editing, and digital best practices."
-    }
-  ]
-}
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://kandelstrategies.com/#website",
+        "url": "https://kandelstrategies.com",
+        "name": "Kandel Strategies"
+      },
+      {
+        "@type": ["Organization", "ProfessionalService"],
+        "@id": "https://kandelstrategies.com/#organization",
+        "name": "Kandel Strategies",
+        "url": "https://kandelstrategies.com"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Slim Dark Header -->
+  <section class="hero-section" style="background-image: none; min-height: auto;">
+    {% include nav.html %}
+  </section>
+
+  <main class="container" id="main-content" style="padding-top: 4rem; padding-bottom: 4rem;">
+    <article style="max-width: 800px; margin: 0 auto;">
+      <h1 style="font-size: 2.5rem; margin-bottom: 2.5rem;">Professional Background</h1>
+      
+      <div id="experience-container"></div>
+    </article>
+  </main>
+
+  {% include footer.html %}
+
+  <script>
+    // Load dynamic site logo
+    fetch('/content/site.json?v=' + new Date().getTime())
+      .then(r => r.json())
+      .then(data => {
+        if (data.logo_url) {
+          const logo = document.getElementById('site-logo');
+          if (logo) logo.src = '/public/images/' + data.logo_url.split('/').pop();
+        }
+      })
+      .catch(err => console.error('Logo load failed:', err));
+
+    // Load dynamic experience entries from JSON
+    fetch('/content/experience.json?v=' + new Date().getTime())
+      .then(r => r.json())
+      .then(data => {
+        const container = document.getElementById('experience-container');
+        const items = data.list || data;
+        if (items && items.length) {
+          container.innerHTML = items.map(item => `
+            <div style="margin-bottom: 2rem;">
+              <strong>${item.role} — ${item.company}</strong><br>
+              <span style="color: #aaa; font-size: 0.9rem;">${item.dates}</span>
+              <p style="margin-top: 0.5rem; line-height: 1.6;">${item.description}</p>
+            </div>
+          `).join('');
+        }
+      })
+      .catch(err => console.error('Experience content load failed:', err));
+  </script>
+</body>
+</html>
