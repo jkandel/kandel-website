@@ -100,17 +100,21 @@ content:
     label: Experience Page
     type: file
     path: content/experience.json
-    list: true
     fields:
-      - name: role
-        label: Role Title
-        type: string
-      - name: company
-        label: Company
-        type: string
-      - name: dates
-        label: Dates
-        type: string
-      - name: description
-        label: Description
-        type: text
+      - name: list
+        label: Experience Items
+        type: object
+        list: true
+        fields:
+          - name: role
+            label: Role Title
+            type: string
+          - name: company
+            label: Company
+            type: string
+          - name: dates
+            label: Dates
+            type: string
+          - name: description
+            label: Description
+            type: text
