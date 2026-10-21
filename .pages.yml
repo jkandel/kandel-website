@@ -7,6 +7,7 @@ content:
     label: Homepage Content
     type: file
     path: content/site.json
+    format: json
     fields:
       - label: Logo Image URL
         name: logo_url
