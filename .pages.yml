@@ -101,7 +101,6 @@ content:
     label: Experience Page
     type: file
     path: content/experience.json
-    format: raw
     list: true
     fields:
       - name: role
