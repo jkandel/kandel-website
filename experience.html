@@ -42,34 +42,34 @@ layout: null
 
   {% include footer.html %}
 
-  <script>
-    // Load dynamic site logo
-    fetch('/content/site.json?v=' + new Date().getTime())
-      .then(r => r.json())
-      .then(data => {
-        if (data.logo_url) {
-          const logo = document.getElementById('site-logo');
-          if (logo) logo.src = '/public/images/' + data.logo_url.split('/').pop();
-        }
-      })
-      .catch(err => console.error('Logo load failed:', err));
+<script>
+  // Load dynamic experience entries from JSON
+  fetch('/content/experience.json?v=' + new Date().getTime())
+    .then(r => r.json())
+    .then(data => {
+      const container = document.getElementById('experience-container');
+      // Extract the array from the JSON object
+      const items = Array.isArray(data) ? data : (data.experience_items || data.items || []);
+      
+      if (items && items.length) {
+        container.innerHTML = items.map(item => {
+          // Fall back to CMS label names if standard lowercased keys aren't present
+          const role = item.role || item['Role Title'] || item['role_title'] || '';
+          const company = item.company || item['Company'] || '';
+          const dates = item.dates || item['Dates'] || '';
+          const description = item.description || item['Description'] || '';
 
-    // Load dynamic experience entries from JSON
-    fetch('/content/experience.json?v=' + new Date().getTime())
-      .then(r => r.json())
-      .then(items => {
-        const container = document.getElementById('experience-container');
-        if (items && items.length) {
-          container.innerHTML = items.map(item => `
+          return `
             <div style="margin-bottom: 2rem;">
-              <strong>${item.role} — ${item.company}</strong><br>
-              <span style="color: #aaa; font-size: 0.9rem;">${item.dates}</span>
-              <p style="margin-top: 0.5rem; line-height: 1.6;">${item.description}</p>
+              <strong>${role}${company ? ' — ' + company : ''}</strong><br>
+              <span style="color: #aaa; font-size: 0.9rem;">${dates}</span>
+              <p style="margin-top: 0.5rem; line-height: 1.6; white-space: pre-line;">${description}</p>
             </div>
-          `).join('');
-        }
-      })
-      .catch(err => console.error('Experience content load failed:', err));
-  </script>
+          `;
+        }).join('');
+      }
+    })
+    .catch(err => console.error('Experience content load failed:', err));
+</script>
 </body>
 </html>
