@@ -103,20 +103,16 @@ content:
     path: content/experience.json
     format: raw
     fields:
-      - name: list
-        label: Experience Items
-        type: object
-        list: true
-        fields:
-          - name: role
-            label: Role Title
-            type: string
-          - name: company
-            label: Company
-            type: string
-          - name: dates
-            label: Dates
-            type: string
-          - name: description
-            label: Description
-            type: text
+      - name: role
+        label: Role Title
+        type: string
+      - name: company
+        label: Company
+        type: string
+      - name: dates
+        label: Dates
+        type: string
+      - name: description
+        label: Description
+        type: text
+    list: true
