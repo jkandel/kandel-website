@@ -102,6 +102,7 @@ content:
     type: file
     path: content/experience.json
     format: raw
+    list: true
     fields:
       - name: role
         label: Role Title
@@ -115,4 +116,3 @@ content:
       - name: description
         label: Description
         type: text
-    list: true
