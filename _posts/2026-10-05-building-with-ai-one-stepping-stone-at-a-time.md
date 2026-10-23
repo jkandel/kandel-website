@@ -4,7 +4,13 @@ date: 2026-10-05
 published: true
 image: /images/Forest-path-to-beach.jpg
 ---
-I recently launched [kandelstrategies.com](http://kandelstrategies.com), the website for my new legal PR consultancy with the help of Google Gemini. I used mostly free tools, vibe coded the homepage and developed a custom CMS for publishing.
+I launched [kandelstrategies.com](http://kandelstrategies.com), the website for my new legal PR consultancy, with the help of Google Gemini. I built it custom using [GitHub Pages](https://docs.github.com/en/pages), vibe coding the homepage and developing a custom CMS using [Pages CMS](http://pagescms.org/), billed as "The simplest CMS you'll ever need," for publishing.
+
+I didn't get a degree in computer science. But my communications degree is paying off.
+
+I had to take on this technical project one small, patient "stepping stone" at a time rather than trying to do everything at once. 
+
+Gemini provided options when I asked for options, while I kept full creative control of the layout and content.
 
 AI is useful if you know what to ask it.
 
@@ -12,12 +18,10 @@ You need to be clear and specific, for sure. But I find that I like to focus on 
 
 And I like to have it ask me the questions it needs up front, rather than get into extra-long back-and-forth chat sessions. AI can help you build sites and automations. But it takes patience and a "beginner's mind."
 
-It started with a question: "Do I really need the Cadillac of content management systems that I've used throughout my career?" Or could I have Google Gemini, my current AI tool of choice, help me build one? Over the last year, Gemini helped me build my own personal guitar practice app. That taught me to work through a technical project one question at a time. So why not?
+It started with a question: "Do I really need the Cadillac of content management systems that I've used throughout my career?" Or could I have Google Gemini help me build one?
 
-From there, I built the site with the guidance of AI, one stepping stone at a time.
+Gemini helped me build my own personal guitar practice app. That taught me to work through a technical project one question at a time. So why not?
 
-I'm now building an AI agent to see what else it can help me do. My first task for it was to study my site and suggest changes to its structure and content that might make it easier for AI tools to understand. That includes back-end architectural additions to code and front-end content type issues such as adding FAQs that answer questions people might be asking online if they're interested in legal marketing and want to know about Kandel Strategies.
+Beyond the initial build, the ongoing strategy involves using AI agents to continually evaluate the site's structure and content, from code tweaks to structured FAQs that help visitors and AI search tools find clear answers about legal PR.
 
-I see this AI use as a partnership. I like that the AI suggests ideas or asks me questions and gets me thinking about things I hadn't thought about before. And I like to use my brain to figure out what could be good to add to my site. AI suggests but ultimately I want accurate and useful information that helps people understand what my job is.
-
-Using AI this way also helps me understand how the tools work, how they can be applied to everyday tasks and what's possible.
+AI surfaces structural changes and ideas I might not have considered, but human judgment ensures the final messaging remains authentic and accurate. Along the way, this hands-on experience shows how to apply AI to everyday communications.
