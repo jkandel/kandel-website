@@ -18,7 +18,7 @@ You need to be clear and specific, for sure. But I find that I like to focus on 
 
 And I like to have it ask me the questions it needs up front, rather than get into extra-long back-and-forth chat sessions. AI can help you build sites and automations. But it takes patience and a "beginner's mind."
 
-It started with a question: "Do I really need the Cadillac of content management systems that I've used throughout my career?" Or could I have Google Gemini help me build one?
+It started with a question: "Do I really need the Cadillac of content management systems?" Or could I have Google Gemini help me build one?
 
 Gemini helped me build my own personal guitar practice app. That taught me to work through a technical project one question at a time. So why not?
 
