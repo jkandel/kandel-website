@@ -1,56 +1,59 @@
-[
-  {
-    "role": "Founder & CEO",
-    "company": "Kandel Strategies",
-    "dates": "Since Jul 2026",
-    "description": "Combining traditional media relations, connecting national and trade reporters with legal experts across business, tech, health, and entertainment, with modern digital strategy, including structuring website code, content, and metadata for search and AI search visibility."
-  },
-  {
-    "role": "Content Chief/Project Manager",
-    "company": "WeVote",
-    "dates": "Sep 2025 - Sep 2026",
-    "description": "Directed blog content generation and edited election articles and ballot measure guides. Established editorial and AI usage standards to ensure rigorous fact-checking, source transparency, and traditional newsroom reporting rules."
-  },
-  {
-    "role": "Newsletter Writer/Content Developer",
-    "company": "WeVote",
-    "dates": "May 2025 - Sep 2025",
-    "description": "Planned content and wrote articles focused on boosting voter turnout and civic participation. Coached new writers on research, interviewing, source checking, and writing on deadline."
-  },
-  {
-    "role": "Senior Public Relations Specialist & Chief AI Strategist",
-    "company": "Newsroom Public Relations",
-    "dates": "Sep 2025 - Jun 2026",
-    "description": "Secured national media coverage for attorney clients in outlets such as The New York Times, The Guardian, and the Miami Herald, who provided their expert commentary on high-profile criminal cases, mediation, and legal angles on new state laws. Authored targeted press materials and bios that secured regular media placements and public profiles for clients."
-  },
-  {
-    "role": "Editor",
-    "company": "Law & Crime",
-    "dates": "Jan 2023 - Mar 2025",
-    "description": "Led breaking news coverage, managing reporting, editing, headlines. Reported top-performing coverage on major legal and civil rights cases, including Jan. 6 prosecutions. Edited articles for accuracy, AP Style, and clarity while mentoring staff reporters."
-  },
-  {
-    "role": "Digital News Producer",
-    "company": "NBCUniversal, Inc.",
-    "dates": "Dec 2011 - Aug 2022",
-    "description": "Won first place recognition from the Los Angeles Press Club for a six-part crime story series that set site records for user engagement and traffic growth. Produced a three-part series on an industrial building explosion that prompted an EPA Superfund cleanup and drove state-level environmental health policy reforms. Led breaking news efforts, built interactive visuals, edited videos, and analyzed public records for major investigative projects."
-  },
-  {
-    "role": "Reporter",
-    "company": "Thomson Reuters",
-    "dates": "Jul 2011 - Dec 2011",
-    "description": "Broke exclusive national news on deadline, covering high-profile infrastructure projects, national civil rights debates, and breaking investigative stories."
-  },
-  {
-    "role": "Online Managing Editor",
-    "company": "Southern California Public Radio (American Public Media Group)",
-    "dates": "Aug 2009 - Jul 2011",
-    "description": "Spearheaded newsroom digital strategy and workflows to drive major year-over-year website traffic growth. Directed the station's first award-winning multimedia projects. Led a site redesign that boosted traffic by 50% and hired digital producers and the station's first blogger to cover Southern California's diverse communities."
-  },
-  {
-    "role": "Online Editor",
-    "company": "Los Angeles Daily News (Southern California News Group)",
-    "dates": "Oct 2008 - Aug 2009",
-    "description": "Directed breaking news coverage for high-profile stories, boosting site traffic by 32% to 77 million page views. Launched the newsroom's first interactive databases, directed multimedia and video editing, and led staff web publishing trainings."
-  }
-]
+{
+  "summary": "Bridging traditional media relations and modern digital strategy to maximize client visibility across search and AI platforms.",
+  "items": [
+    {
+      "role": "Founder & CEO",
+      "company": "Kandel Strategies",
+      "dates": "Since Jul 2026",
+      "description": "Combining traditional media relations, connecting national and trade reporters with legal experts across business, tech, health, and entertainment, with modern digital strategy, including structuring website code, content, and metadata for search and AI search visibility."
+    },
+    {
+      "role": "Content Chief/Project Manager",
+      "company": "WeVote",
+      "dates": "Sep 2025 - Sep 2026",
+      "description": "Directed blog content generation and edited election articles and ballot measure guides. Established editorial and AI usage standards to ensure rigorous fact-checking, source transparency, and traditional newsroom reporting rules."
+    },
+    {
+      "role": "Newsletter Writer/Content Developer",
+      "company": "WeVote",
+      "dates": "May 2025 - Sep 2025",
+      "description": "Planned content and wrote articles focused on boosting voter turnout and civic participation. Coached new writers on research, interviewing, source checking, and writing on deadline."
+    },
+    {
+      "role": "Senior Public Relations Specialist & Chief AI Strategist",
+      "company": "Newsroom Public Relations",
+      "dates": "Sep 2025 - Jun 2026",
+      "description": "Secured national media coverage for attorney clients in outlets such as The New York Times, The Guardian, and the Miami Herald, who provided their expert commentary on high-profile criminal cases, mediation, and legal angles on new state laws. Authored targeted press materials and bios that secured regular media placements and public profiles for clients."
+    },
+    {
+      "role": "Editor",
+      "company": "Law & Crime",
+      "dates": "Jan 2023 - Mar 2025",
+      "description": "Led breaking news coverage, managing reporting, editing, headlines. Reported top-performing coverage on major legal and civil rights cases, including Jan. 6 prosecutions. Edited articles for accuracy, AP Style, and clarity while mentoring staff reporters."
+    },
+    {
+      "role": "Digital News Producer",
+      "company": "NBCUniversal, Inc.",
+      "dates": "Dec 2011 - Aug 2022",
+      "description": "Won first place recognition from the Los Angeles Press Club for a six-part crime story series that set site records for user engagement and traffic growth. Produced a three-part series on an industrial building explosion that prompted an EPA Superfund cleanup and drove state-level environmental health policy reforms. Led breaking news efforts, built interactive visuals, edited videos, and analyzed public records for major investigative projects."
+    },
+    {
+      "role": "Reporter",
+      "company": "Thomson Reuters",
+      "dates": "Jul 2011 - Dec 2011",
+      "description": "Broke exclusive national news on deadline, covering high-profile infrastructure projects, national civil rights debates, and breaking investigative stories."
+    },
+    {
+      "role": "Online Managing Editor",
+      "company": "Southern California Public Radio (American Public Media Group)",
+      "dates": "Aug 2009 - Jul 2011",
+      "description": "Spearheaded newsroom digital strategy and workflows to drive major year-over-year website traffic growth. Directed the station's first award-winning multimedia projects. Led a site redesign that boosted traffic by 50% and hired digital producers and the station's first blogger to cover Southern California's diverse communities."
+    },
+    {
+      "role": "Online Editor",
+      "company": "Los Angeles Daily News (Southern California News Group)",
+      "dates": "Oct 2008 - Aug 2009",
+      "description": "Directed breaking news coverage for high-profile stories, boosting site traffic by 32% to 77 million page views. Launched the newsroom's first interactive databases, directed multimedia and video editing, and led staff web publishing trainings."
+    }
+  ]
+}
