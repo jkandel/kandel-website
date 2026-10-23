@@ -1,5 +1,5 @@
 ---
-title: Building with AI, one stepping stone at a time
+title: A practical guide to building with AI, step by step
 date: 2026-10-05
 published: true
 image: /images/Forest-path-to-beach.jpg
