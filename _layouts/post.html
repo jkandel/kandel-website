@@ -41,9 +41,10 @@ layout: null
 
       <h1 style="margin-top: 0; margin-bottom: 0.5rem; font-size: 2.5rem;">{{ page.title }}</h1>
       <p style="color: #aaa; font-size: 0.9rem; margin-bottom: 2rem; border-bottom: 1px solid #333; padding-bottom: 1rem;">
-        By Jason Kandel &bull; Published on {{ page.date | date: "%B %d, %Y" }}
+        By Jason Kandel<br>
+        Published on {{ page.date | date: "%B %d, %Y" }}
         {% if page.last_modified_at and page.last_modified_at != page.date %}
-          &bull; <strong>Last updated on {{ page.last_modified_at | date: "%B %d, %Y" }}</strong>
+          <br><strong>Last updated on {{ page.last_modified_at | date: "%B %d, %Y" }}</strong>
         {% endif %}
       </p>
       
