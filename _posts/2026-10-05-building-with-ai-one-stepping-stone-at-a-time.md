@@ -4,7 +4,7 @@ date: 2026-10-05
 published: true
 image: /images/Forest-path-to-beach.jpg
 ---
-I launched [kandelstrategies.com](http://kandelstrategies.com), the website for my new legal PR consultancy, with the help of Google Gemini. I built it custom using [GitHub Pages](https://docs.github.com/en/pages), vibe coding the homepage and developing a custom CMS using [Pages CMS](http://pagescms.org/), billed as "The simplest CMS you'll ever need," for publishing.
+I launched [kandelstrategies.com](http://kandelstrategies.com), the website for my new legal PR consultancy, with the help of Google Gemini. I built it custom using [GitHub Pages](https://docs.github.com/en/pages), vibe coding the homepage and developing a custom CMS for publishing using [Pages CMS](http://pagescms.org/), billed as "The simplest CMS you'll ever need" and "just as powerful as the big boys..."
 
 I didn't get a degree in computer science. But my communications degree is paying off.
 
