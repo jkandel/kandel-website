@@ -59,8 +59,12 @@ title: "Professional Background & Experience | Kandel Strategies"
 
   <main class="container" id="main-content" style="padding-top: 4rem; padding-bottom: 4rem;">
     <article style="max-width: 800px; margin: 0 auto;">
-      <h1 style="font-size: 2.5rem; margin-bottom: 2.5rem;">Professional Background</h1>
-      <p id="page-summary"></p>
+      <h1 style="font-size: 2.5rem; margin-bottom: 2rem;">Professional Background</h1>
+      
+      <!-- Summary Card Box -->
+      <div style="background-color: #ffffff; border: 1.5px solid #1d4ed8; border-radius: 12px; padding: 2rem; margin-bottom: 3rem;">
+        <p id="page-summary" style="font-size: 1.15rem; line-height: 1.6; margin: 0; color: #1e293b;"></p>
+      </div>
       
       <div id="experience-container"></div>
     </article>
@@ -78,12 +82,10 @@ title: "Professional Background & Experience | Kandel Strategies"
       }
 
       const container = document.getElementById('experience-container');
-      // Extract the array from the JSON object
       const items = Array.isArray(data) ? data : (data.list || data.experience_items || data.items || [data]);
       
       if (items && items.length) {
         container.innerHTML = items.map(item => {
-          // Fall back to CMS label names if standard lowercased keys aren't present
           const role = item.role || item['Role Title'] || item['role_title'] || '';
           const company = item.company || item['Company'] || '';
           const dates = item.dates || item['Dates'] || '';
