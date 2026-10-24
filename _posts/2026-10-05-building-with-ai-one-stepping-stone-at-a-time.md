@@ -25,4 +25,4 @@ Gemini helped me build my own personal guitar practice app. That taught me to wo
 
 Beyond the initial build, the ongoing strategy involves using AI agents to continually evaluate the site's structure and content, from code tweaks to structured FAQs that help visitors and AI search tools find clear answers about legal PR.
 
-AI surfaces structural changes and ideas I might not have considered, but human judgment ensures the final messaging remains authentic and accurate. Along the way, this hands-on experience shows how to apply AI to everyday communications.
+AI surfaces structural changes I might not have known about, but human judgment ensures the content remains accurate and authentic. Along the way, using these AI tools refines my daily workflow and sharpens my understanding of where this tech adds real value.
