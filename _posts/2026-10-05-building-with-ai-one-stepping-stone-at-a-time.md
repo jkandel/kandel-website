@@ -1,5 +1,5 @@
 ---
-title: A practical guide to building with AI, step by step
+title: A practical guide to building with AI
 date: 2026-10-05
 updated: 2026-10-24
 published: true
