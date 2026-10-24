@@ -60,6 +60,7 @@ title: "Professional Background & Experience | Kandel Strategies"
   <main class="container" id="main-content" style="padding-top: 4rem; padding-bottom: 4rem;">
     <article style="max-width: 800px; margin: 0 auto;">
       <h1 style="font-size: 2.5rem; margin-bottom: 2.5rem;">Professional Background</h1>
+      <p id="page-summary"></p>
       
       <div id="experience-container"></div>
     </article>
@@ -72,6 +73,10 @@ title: "Professional Background & Experience | Kandel Strategies"
   fetch('/content/experience.json?v=' + new Date().getTime())
     .then(r => r.json())
     .then(data => {
+      if (data.summary) {
+        document.getElementById('page-summary').textContent = data.summary;
+      }
+
       const container = document.getElementById('experience-container');
       // Extract the array from the JSON object
       const items = Array.isArray(data) ? data : (data.list || data.experience_items || data.items || [data]);
