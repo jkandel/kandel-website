@@ -86,6 +86,9 @@ content:
       - name: date
         label: Date
         type: date
+      - name: updated
+        label: Updated Date
+        type: date
       - name: published
         label: Published
         type: boolean
