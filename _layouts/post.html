@@ -11,6 +11,7 @@ layout: null
     "@type": "BlogPosting",
     "headline": "{{ page.title | escape }}",
     "datePublished": "{{ page.date | date_to_xmlschema }}",
+    "dateModified": "{{ page.last_modified_at | default: page.updated | default: page.date | date_to_xmlschema }}",
     {% if page.image %}
     "image": "https://kandelstrategies.com/public/images/{{ page.image | split: '/' | last }}",
     {% endif %}
@@ -43,8 +44,9 @@ layout: null
       <p style="color: #aaa; font-size: 0.9rem; margin-bottom: 2rem; border-bottom: 1px solid #333; padding-bottom: 1rem;">
         By Jason Kandel<br>
         Published on {{ page.date | date: "%B %d, %Y" }}
-        {% if page.last_modified_at and page.last_modified_at != page.date %}
-          <br><strong>Last updated on {{ page.last_modified_at | date: "%B %d, %Y" }}</strong>
+        {% assign updated_date = page.last_modified_at | default: page.updated %}
+        {% if updated_date and updated_date != page.date %}
+          <br><strong>Last updated on {{ updated_date | date: "%B %d, %Y" }}</strong>
         {% endif %}
       </p>
       
