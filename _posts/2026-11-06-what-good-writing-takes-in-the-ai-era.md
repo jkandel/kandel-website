@@ -4,6 +4,7 @@ date: 2026-11-06
 updated: 2026-11-06
 published: true
 image: /images/shutterstock_2573734431.jpg
+image_credit: koivo/Shutterstock.com
 ---
 An editor early in my journalism career had a simple rule: a story doesn't get published without at least two independent sources. 
 
