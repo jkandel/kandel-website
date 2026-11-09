@@ -96,6 +96,9 @@ content:
       - name: image
         label: Featured Image
         type: image        
+      - name: image_credit
+        label: Photo Credit
+        type: string        
       - name: body
         label: Main Text
         type: rich-text
