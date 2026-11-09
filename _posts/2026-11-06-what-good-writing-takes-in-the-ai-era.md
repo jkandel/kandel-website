@@ -10,11 +10,11 @@ An editor early in my journalism career had a simple rule: a story doesn't get p
 
 Even as newsrooms began paying closer attention to website traffic, that rule remained non-negotiable.
 
-Today, [Google's official quality guidelines](https://developers.google.com/search/docs/fundamentals/creating-helpful-content) ask whether content avoids "simply copying or rewriting" existing pages or whether it provides substantial value and original reporting. The editor's rule was about verifying a story. Google's guidance also asks what value the story adds.
+Today, [Google's official quality guidelines](https://developers.google.com/search/docs/fundamentals/creating-helpful-content) ask whether content avoids "simply copying or rewriting" existing pages or whether it provides value and original reporting. The editor's rule was about verifying a story. Google's guidance also asks what value the story adds.
 
 A newsroom story I heard years ago has a reporter responding to an editor who asked when his piece would be ready: "Do you want it now, or do you want it good?"
 
-AI has made producing text easy. But how is that going? Not great. And we're offloading our brains and forgetting that good writing takes time. It takes time to think. It takes time to verify information, to read primary sources, and to think again. Some consider writing fulfilling and fun, a very rewarding and human experience. While generative AI can help us organize our thoughts and make sense of vast amounts of data, among other big ideas and small, we're using it to generate "slop." And Google responds to low-quality content.
+AI has made producing text easy. But how is that going? Are we outsourcing our brains and forgetting that good writing takes time? It takes time to think. It takes time to verify information, to read primary sources, and to think again. Some consider writing fulfilling and fun, a very rewarding and human experience. While generative AI can help us organize our thoughts and make sense of vast amounts of data, among other big ideas and small, we're using it to generate slop.
 
 Another line from my journalism days is appropriate here: "If your mother says she loves you, check it out."
 
