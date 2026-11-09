@@ -17,24 +17,28 @@ layout: null
   <main id="main-content" class="container" style="padding-top: 4rem; padding-bottom: 4rem;">
     <h1 class="section-title" style="text-align: left; margin-bottom: 2rem;">Insights</h1>
 
-    <div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2rem;">
       {% for post in site.posts %}
-        <div style="margin-bottom: 3rem; padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #eaeaea;">
-          {% if post.image %}
-            {% assign image_filename = post.image | split: '/' | last %}
-            <img src="/public/images/{{ image_filename }}" alt="{{ post.title }}" style="width: 100%; height: 250px; object-fit: cover; border-radius: 0.5rem; margin-bottom: 1.5rem;">
-            {% if post.image_credit %}
-              <p class="image-credit" style="font-size: 0.75rem; color: #aaa; margin-top: -1.2rem; margin-bottom: 1.5rem; text-align: center;">
-                Photo Credit: {{ post.image_credit }}
-              </p>
+        <div style="margin-bottom: 0; padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #eaeaea; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            {% if post.image %}
+              {% assign image_filename = post.image | split: '/' | last %}
+              <img src="/public/images/{{ image_filename }}" alt="{{ post.title }}" style="width: 100%; height: 200px; object-fit: cover; border-radius: 0.5rem; margin-bottom: 1.5rem;">
+              {% if post.image_credit %}
+                <p class="image-credit" style="font-size: 0.75rem; color: #aaa; margin-top: -1.2rem; margin-bottom: 1.5rem; text-align: center;">
+                  Photo Credit: {{ post.image_credit }}
+                </p>
+              {% endif %}
             {% endif %}
-          {% endif %}
-          <h2 style="margin-top: 0;">
-            <a href="{{ post.url | relative_url }}" style="text-decoration: none; color: inherit;">{{ post.title }}</a>
-          </h2>
-          <p style="color: #666; font-size: 0.9rem;">{{ post.date | date: "%B %d, %Y" }}</p>
-          <p>{{ post.content | strip_html | truncatewords: 45 }}</p>
-          <a href="{{ post.url | relative_url }}" style="color: #38bdf8; font-weight: bold; text-decoration: none;">Read Full Article &rarr;</a>
+            <h2 style="margin-top: 0; font-size: 1.5rem;">
+              <a href="{{ post.url | relative_url }}" style="text-decoration: none; color: inherit;">{{ post.title }}</a>
+            </h2>
+            <p style="color: #666; font-size: 0.9rem;">{{ post.date | date: "%B %d, %Y" }}</p>
+            <p>{{ post.content | strip_html | truncatewords: 25 }}</p>
+          </div>
+          <div style="margin-top: 1.5rem;">
+            <a href="{{ post.url | relative_url }}" style="color: #38bdf8; font-weight: bold; text-decoration: none;">Read Full Article &rarr;</a>
+          </div>
         </div>
       {% endfor %}
     </div>
