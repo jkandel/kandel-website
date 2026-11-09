@@ -24,7 +24,7 @@ As [Poynter's media literacy standards](https://www.poynter.org/mediawise/misinf
 
 Once you have the primary sources, the digging begins: read the coverage, ask questions, and look for what the daily story left unexplored.
 
-When California passed a post-production tax credit, I connected an LAist reporter with an entertainment lawyer who works on production incentives. [He pointed out](https://laist.com/news/arts-and-entertainment/california-post-production-tax-credit-federal-credit-game-changer) that the credit's $10 million cap could be used up in days and that production budgets would still shape where work goes.
+When a state or federal government passes a major production incentive, for example, the real story starts. An entertainment [pointed out](https://laist.com/news/arts-and-entertainment/california-post-production-tax-credit-federal-credit-game-changer) that caps are reached quickly and the economic realities are shape where work goes.
 
 That's the next question worth asking. Beyond the basic facts: What happens now? Who's affected? What will it cost? What's left undecided?
 
