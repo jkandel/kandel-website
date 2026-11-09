@@ -1,5 +1,5 @@
 ---
-title: Why I'm building my website for humans and AI
+title: Websites for Humans and AI
 date: 2026-10-14
 updated: 2026-11-08
 published: true
