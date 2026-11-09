@@ -23,6 +23,11 @@ layout: null
           {% if post.image %}
             {% assign image_filename = post.image | split: '/' | last %}
             <img src="/public/images/{{ image_filename }}" alt="{{ post.title }}" style="width: 100%; height: 250px; object-fit: cover; border-radius: 0.5rem; margin-bottom: 1.5rem;">
+            {% if post.image_credit %}
+              <p class="image-credit" style="font-size: 0.75rem; color: #aaa; margin-top: -1.2rem; margin-bottom: 1.5rem; text-align: center;">
+                Photo Credit: {{ post.image_credit }}
+              </p>
+            {% endif %}
           {% endif %}
           <h2 style="margin-top: 0;">
             <a href="{{ post.url | relative_url }}" style="text-decoration: none; color: inherit;">{{ post.title }}</a>
