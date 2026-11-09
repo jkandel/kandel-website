@@ -24,7 +24,7 @@ As [Poynter's media literacy standards](https://www.poynter.org/mediawise/misinf
 
 Once you have the primary sources, the digging begins: read the coverage, ask questions, and look for what the daily story left unexplored.
 
-When a state or federal government passes a major production incentive, for example, the real story starts. An entertainment attorney client I work with [pointed out](https://laist.com/news/arts-and-entertainment/california-post-production-tax-credit-federal-credit-game-changer) that caps are reached quickly and the economic realities are shape where work goes.
+When a state or federal government passes a major production incentive, for example, the real story starts. An entertainment attorney client I work with [pointed out](https://laist.com/news/arts-and-entertainment/california-post-production-tax-credit-federal-credit-game-changer) that caps are reached quickly and the economics shape where the work will go.
 
 That's the next question worth asking. Beyond the basic facts: What happens now? Who's affected? What will it cost? What's left undecided?
 
