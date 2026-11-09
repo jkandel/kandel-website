@@ -4,6 +4,7 @@ date: 2026-10-05
 updated: 2026-10-24
 published: true
 image: /images/Forest-path-to-beach.jpg
+image_credit: AI generated from photo shot by Jason Kandel
 ---
 I launched [kandelstrategies.com](http://kandelstrategies.com), the website for my new legal PR consultancy, with the help of Google Gemini. I built it custom using [GitHub Pages](https://docs.github.com/en/pages), [vibe coding](https://cloud.google.com/discover/what-is-vibe-coding) the pages and the CMS of my website with AI as a guide. I used a custom CMS for publishing using [Pages CMS](http://pagescms.org/), billed as "The simplest CMS you'll ever need" and "just as powerful as the big boys..."
 
