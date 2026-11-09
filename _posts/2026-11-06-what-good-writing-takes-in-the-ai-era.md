@@ -1,7 +1,7 @@
 ---
 title: What Good Writing Takes in the AI Era
 date: 2026-11-06
-updated: 2026-11-06
+updated: 2026-11-09
 published: true
 image: /images/shutterstock_2573734431.jpg
 image_credit: koivo/Shutterstock.com
