@@ -1,8 +1,10 @@
 ---
 title: Why I'm building my website for humans and AI
 date: 2026-10-14
+updated: 2026-11-08
 published: true
 image: /images/shutterstock_ai_human.jpg
+image_credit: Shutterstock.AI Generator
 ---
 While building my company website, I read a fascinating post by internet entrepreneur [Joost de Valk](https://joost.blog/about-me/) on [The future of the website](https://joost.blog/future-of-the-website/). He writes about what I'm seeing firsthand: Websites increasingly need to be useful to both people and AI tools.
 
