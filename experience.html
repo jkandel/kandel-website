@@ -49,6 +49,120 @@ title: "Professional Background & Experience | Kandel Strategies"
     ]
   }
   </script>
+  <style>
+    /* Screen Button Styling */
+    .print-button-container {
+      margin-top: 2.5rem;
+      text-align: left;
+    }
+    .print-resume-btn {
+      background-color: #1d4ed8;
+      color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    .print-resume-btn:hover {
+      background-color: #1e40af;
+    }
+
+    /* Hide print-only resume header on screen */
+    .print-resume-header {
+      display: none;
+    }
+
+    /* 1-Page Resume Print Layout */
+    @media print {
+      @page {
+        size: letter;
+        margin: 0.45in;
+      }
+
+      /* Hide web navigation, web title, footer, and print button */
+      .hero-section,
+      .web-page-title,
+      footer,
+      .print-button-container {
+        display: none !important;
+      }
+
+      /* Show resume header at top of PDF */
+      .print-resume-header {
+        display: block !important;
+        border-bottom: 1.5px solid #1d4ed8;
+        padding-bottom: 0.35rem;
+        margin-bottom: 0.6rem;
+      }
+      .print-resume-header h2 {
+        font-size: 16pt !important;
+        margin: 0 0 0.15rem 0 !important;
+        color: #000000 !important;
+      }
+      .print-resume-header p {
+        font-size: 9pt !important;
+        margin: 0 !important;
+        color: #334155 !important;
+      }
+
+      /* Reset page container spacing and colors for clean printing */
+      body {
+        background: #ffffff !important;
+        color: #000000 !important;
+        font-size: 9.5pt !important;
+        line-height: 1.3 !important;
+      }
+
+      main.container {
+        padding: 0 !important;
+        max-width: 100% !important;
+      }
+
+      article {
+        max-width: 100% !important;
+      }
+
+      /* Condense the summary box */
+      .summary-card-box {
+        padding: 0.5rem 0.75rem !important;
+        margin-bottom: 0.75rem !important;
+        border: 1px solid #cbd5e1 !important;
+        border-radius: 4px !important;
+      }
+
+      #page-summary {
+        font-size: 8.8pt !important;
+        line-height: 1.28 !important;
+        color: #1e293b !important;
+      }
+
+      /* Tighten spacing between job entries so all fit on 1 page */
+      #experience-container > div {
+        margin-bottom: 0.55rem !important;
+        page-break-inside: avoid;
+      }
+
+      #experience-container strong {
+        font-size: 9.5pt !important;
+        color: #000000 !important;
+      }
+
+      #experience-container span {
+        color: #475569 !important;
+        font-size: 8.5pt !important;
+      }
+
+      #experience-container p {
+        margin-top: 0.15rem !important;
+        line-height: 1.26 !important;
+        font-size: 8.6pt !important;
+        color: #1e293b !important;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -59,14 +173,26 @@ title: "Professional Background & Experience | Kandel Strategies"
 
   <main class="container" id="main-content" style="padding-top: 4rem; padding-bottom: 4rem;">
     <article style="max-width: 800px; margin: 0 auto;">
-      <h1 style="font-size: 2.5rem; margin-bottom: 2rem;">Professional Background</h1>
+      <!-- Print-only Resume Header -->
+      <div class="print-resume-header">
+        <h2>Jason Kandel</h2>
+        <p>Founder &amp; CEO, Kandel Strategies &bull; Legal PR, Media Relations &amp; AI Content Strategy &bull; kandelstrategies.com</p>
+      </div>
+
+      <h1 class="web-page-title" style="font-size: 2.5rem; margin-bottom: 2rem;">Professional Background</h1>
       
       <!-- Summary Card Box -->
-      <div style="background-color: #ffffff; border: 1.5px solid #1d4ed8; border-radius: 12px; padding: 2rem; margin-bottom: 3rem;">
+      <div class="summary-card-box" style="background-color: #ffffff; border: 1.5px solid #1d4ed8; border-radius: 12px; padding: 2rem; margin-bottom: 3rem;">
         <p id="page-summary" style="font-size: 1.15rem; line-height: 1.6; margin: 0; color: #1e293b;"></p>
       </div>
       
       <div id="experience-container"></div>
+
+      <div class="print-button-container">
+        <button onclick="window.print()" class="print-resume-btn">
+          Download / Print 1-Page Resume (PDF)
+        </button>
+      </div>
     </article>
   </main>
 
