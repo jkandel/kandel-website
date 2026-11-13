@@ -176,7 +176,8 @@ title: "Professional Background & Experience | Kandel Strategies"
       <!-- Print-only Resume Header -->
       <div class="print-resume-header">
         <h2>Jason Kandel</h2>
-        <p>Founder &amp; CEO, Kandel Strategies &bull; Legal PR, Media Relations &amp; AI Content Strategy &bull; kandelstrategies.com</p>
+        <p id="resume-header-title">Founder &amp; CEO, Kandel Strategies &bull; Legal PR, Media Relations &amp; AI Content Strategy</p>
+        <p><span id="resume-header-email">jason@kandelstrategies.com</span> &bull; kandelstrategies.com</p>
       </div>
 
       <h1 class="web-page-title" style="font-size: 2.5rem; margin-bottom: 2rem;">Professional Background</h1>
@@ -205,6 +206,12 @@ title: "Professional Background & Experience | Kandel Strategies"
     .then(data => {
       if (data.summary) {
         document.getElementById('page-summary').textContent = data.summary;
+      }
+      if (data.resume_title) {
+        document.getElementById('resume-header-title').textContent = data.resume_title;
+      }
+      if (data.resume_email) {
+        document.getElementById('resume-header-email').textContent = data.resume_email;
       }
 
       const container = document.getElementById('experience-container');
