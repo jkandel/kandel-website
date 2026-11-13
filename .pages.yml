@@ -107,6 +107,12 @@ content:
     type: file
     path: content/experience.json
     fields:
+      - name: resume_title
+        label: Resume Header Title / Tagline
+        type: string
+      - name: resume_email
+        label: Resume Header Email
+        type: string
       - name: summary
         label: Page Summary
         type: text
