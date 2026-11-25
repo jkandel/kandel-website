@@ -162,6 +162,9 @@ content:
           - name: outlet
             label: Outlet
             type: string
+          - name: outlet_logo
+            label: Outlet Logo
+            type: image
           - name: headline
             label: Story Headline
             type: string
