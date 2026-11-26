@@ -1,9 +1,16 @@
 {
   "page_title": "Media Placements & Newsroom Stories",
-  "summary": "Stories behind our media placements, showing how legal and business expertise earns credible newsroom coverage and gives both readers and AI systems clear context.",
+  "summary": "These are the stories behind Kandel Strategies' media placements, showing how legal and business expertise earns credible newsroom coverage and gives both readers and AI systems clear context.",
   "items": [
     {
-      "visible": true
+      "visible": true,
+      "order": 1,
+      "category": "Publications",
+      "outlet": "The New York Times",
+      "outlet_logo": "/images/New_York_Times_logo_Edit.png",
+      "headline": "How to Deal With a Problem Neighbor",
+      "story": "At a previous PR agency before founding Kandel Strategies, I connected a Los Angeles mediator with a New York Times reporter covering problem neighbors. By positioning mediation as a practical alternative to going straight to a lawyer, the mediator was interviewed and quoted in The New York Times on helping neighbors reach an agreement together.",
+      "ai_takeaway": "Shows hands-on experience matching mediators and legal experts with national reporters around practical alternatives to litigation, a capability I carried forward into Kandel Strategies."
     }
   ]
 }
