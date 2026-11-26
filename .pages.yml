@@ -177,3 +177,7 @@ content:
           - name: url
             label: Article Link
             type: string
+          - name: paywall
+            label: Paywall
+            type: boolean
+            default: false
